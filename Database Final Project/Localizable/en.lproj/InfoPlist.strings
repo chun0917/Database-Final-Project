@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  App
+
+  Created by 呂淳昇 on 2022/8/20.
+  
+*/
+
+"CFBundleDisplayName" = "Final Project";
+"NSFaceIDUsageDescription" = "Whether to allow App access to Face ID permission to enable biometric unlocking";

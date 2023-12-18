@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsMainViewController" customModule="TekPass_Keep" customModuleProvider="target">
+            <connections>
+                <outlet property="settingsTableView" destination="vO6-AH-k0G" id="mEc-93-eJz"/>
+                <outlet property="vNavigationBar" destination="mRX-FL-rXW" id="uBF-wc-V97"/>
+                <outlet property="vStatusBar" destination="uPJ-CQ-uba" id="ugb-gr-zi5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uPJ-CQ-uba" customClass="StatusBarView" customModule="TekPass_Keep" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mRX-FL-rXW" customClass="NavigationBarView" customModule="TekPass_Keep" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="HWp-BS-I5x"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vO6-AH-k0G">
+                    <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="uPJ-CQ-uba" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0bL-m7-Noc"/>
+                <constraint firstItem="mRX-FL-rXW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2LP-0X-o4y"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vO6-AH-k0G" secondAttribute="trailing" id="I6P-hI-55k"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mRX-FL-rXW" secondAttribute="trailing" id="M0C-Ui-d7W"/>
+                <constraint firstItem="mRX-FL-rXW" firstAttribute="top" secondItem="uPJ-CQ-uba" secondAttribute="bottom" id="M2z-lD-5rU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="vO6-AH-k0G" secondAttribute="bottom" id="O4p-U3-qr4"/>
+                <constraint firstItem="mRX-FL-rXW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="SDs-42-uOo"/>
+                <constraint firstItem="vO6-AH-k0G" firstAttribute="top" secondItem="mRX-FL-rXW" secondAttribute="bottom" id="Tht-Xv-KGv"/>
+                <constraint firstItem="vO6-AH-k0G" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Xxl-2f-wC1"/>
+                <constraint firstItem="uPJ-CQ-uba" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZFG-Lw-gjP"/>
+                <constraint firstAttribute="trailing" secondItem="uPJ-CQ-uba" secondAttribute="trailing" id="Zxj-ci-kMZ"/>
+                <constraint firstItem="vO6-AH-k0G" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="wVy-UN-kfw"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="98"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditNotesViewController" customModule="TekPass_Keep" customModuleProvider="target">
+            <connections>
+                <outlet property="copyButton" destination="mPy-Tx-o4s" id="ZrX-zi-6wP"/>
+                <outlet property="noteTextView" destination="O1H-sH-K87" id="esZ-B8-bud"/>
+                <outlet property="notesCountLabel" destination="c8e-dR-qjl" id="0Xc-Ue-99K"/>
+                <outlet property="titleCountLabel" destination="FTR-Xt-8RJ" id="1sB-s8-GUi"/>
+                <outlet property="titleTextField" destination="tNk-HQ-1Kz" id="is8-rc-Ijz"/>
+                <outlet property="vNavigationBar" destination="UWd-6f-9D4" id="IeW-xi-huU"/>
+                <outlet property="vStatusBar" destination="eAo-WC-ywC" id="i34-xa-EjY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="requiredLabels" destination="DFP-9L-yyU" collectionClass="NSMutableArray" id="UqC-oz-SxJ"/>
+                <outletCollection property="requiredLabels" destination="0y5-ZF-Uw7" collectionClass="NSMutableArray" id="30D-Aq-s5Y"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAo-WC-ywC" customClass="StatusBarView" customModule="TekPass_Keep" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UWd-6f-9D4" customClass="NavigationBarView" customModule="TekPass_Keep" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="0eE-L9-kT2"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*必填" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFP-9L-yyU">
+                    <rect key="frame" x="40" y="197" width="354" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*必填" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0y5-ZF-Uw7">
+                    <rect key="frame" x="40" y="374" width="354" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="標題" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tNk-HQ-1Kz" userLabel="TitleTextField" customClass="CustomTextField" customModule="TekPass_Keep" customModuleProvider="target">
+                    <rect key="frame" x="20" y="122" width="374" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="CCH-9d-cpi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textFieldDidChanged:" destination="-1" eventType="editingChanged" id="pQM-CU-vhc"/>
+                    </connections>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="O1H-sH-K87" userLabel="NoteTextView" customClass="IQTextView" customModule="IQKeyboardManagerSwift">
+                    <rect key="frame" x="20" y="219" width="324" height="150"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="zjJ-gy-Z8n"/>
+                    </constraints>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                            <color key="value" systemColor="placeholderTextColor"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="備註"/>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPy-Tx-o4s" userLabel="copyButton">
+                    <rect key="frame" x="354" y="274" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="Dy1-lw-qKf"/>
+                        <constraint firstAttribute="height" constant="40" id="zjE-59-BXb"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal">
+                        <imageReference key="image" image="rectangle.portrait.on.rectangle.portrait" catalog="system" renderingMode="original"/>
+                    </state>
+                    <connections>
+                        <action selector="copyNotes:" destination="-1" eventType="touchUpInside" id="Xfx-zH-GPW"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTR-Xt-8RJ">
+                    <rect key="frame" x="358.5" y="192" width="35.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8e-dR-qjl">
+                    <rect key="frame" x="308.5" y="369" width="35.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tNk-HQ-1Kz" secondAttribute="trailing" constant="20" id="04H-GU-JdB"/>
+                <constraint firstItem="c8e-dR-qjl" firstAttribute="top" secondItem="O1H-sH-K87" secondAttribute="bottom" id="0Mg-G9-Tgq"/>
+                <constraint firstItem="eAo-WC-ywC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0qg-mC-sea"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0y5-ZF-Uw7" secondAttribute="trailing" constant="20" id="1I8-qD-mlw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mPy-Tx-o4s" secondAttribute="trailing" constant="20" id="2uO-Eg-b2h"/>
+                <constraint firstItem="UWd-6f-9D4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3T3-ku-vIL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FTR-Xt-8RJ" secondAttribute="trailing" constant="20" id="Dzh-Zq-FFf"/>
+                <constraint firstItem="UWd-6f-9D4" firstAttribute="top" secondItem="eAo-WC-ywC" secondAttribute="bottom" id="Eyx-9z-zyS"/>
+                <constraint firstItem="FTR-Xt-8RJ" firstAttribute="top" secondItem="tNk-HQ-1Kz" secondAttribute="bottom" id="FMp-Y4-L17"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DFP-9L-yyU" secondAttribute="trailing" constant="20" id="KRe-yf-kae"/>
+                <constraint firstItem="tNk-HQ-1Kz" firstAttribute="top" secondItem="UWd-6f-9D4" secondAttribute="bottom" constant="30" id="PeK-es-2fw"/>
+                <constraint firstItem="O1H-sH-K87" firstAttribute="top" secondItem="DFP-9L-yyU" secondAttribute="bottom" constant="5" id="T5U-kz-w1H"/>
+                <constraint firstItem="O1H-sH-K87" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Xj9-15-MF2"/>
+                <constraint firstItem="mPy-Tx-o4s" firstAttribute="centerY" secondItem="O1H-sH-K87" secondAttribute="centerY" id="aBC-By-pfE"/>
+                <constraint firstAttribute="trailing" secondItem="eAo-WC-ywC" secondAttribute="trailing" id="ack-xe-EM3"/>
+                <constraint firstItem="DFP-9L-yyU" firstAttribute="top" secondItem="tNk-HQ-1Kz" secondAttribute="bottom" constant="5" id="f3z-1o-q2P"/>
+                <constraint firstItem="UWd-6f-9D4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="gHo-Ej-4Ls"/>
+                <constraint firstItem="mPy-Tx-o4s" firstAttribute="leading" secondItem="O1H-sH-K87" secondAttribute="trailing" constant="10" id="hsB-Zc-cbV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UWd-6f-9D4" secondAttribute="trailing" id="i1c-Ke-sxl"/>
+                <constraint firstItem="tNk-HQ-1Kz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="lQh-qT-0YV"/>
+                <constraint firstItem="DFP-9L-yyU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="pou-Vs-CJR"/>
+                <constraint firstItem="eAo-WC-ywC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rIQ-Fb-7B4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="c8e-dR-qjl" secondAttribute="trailing" constant="70" id="sfI-VU-cCP"/>
+                <constraint firstItem="0y5-ZF-Uw7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="vhX-L1-BZ7"/>
+                <constraint firstItem="0y5-ZF-Uw7" firstAttribute="top" secondItem="O1H-sH-K87" secondAttribute="bottom" constant="5" id="whe-hq-ZCC"/>
+            </constraints>
+            <point key="canvasLocation" x="271" y="76"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="rectangle.portrait.on.rectangle.portrait" catalog="system" width="118" height="128"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

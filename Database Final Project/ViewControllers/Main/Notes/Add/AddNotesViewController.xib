@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddNotesViewController" customModule="TekPass_Keep" customModuleProvider="target">
+            <connections>
+                <outlet property="noteTextView" destination="O1H-sH-K87" id="CNa-OW-XH5"/>
+                <outlet property="notesCountLabel" destination="o20-Y6-lDH" id="ccH-ED-oF7"/>
+                <outlet property="titleCountLabel" destination="6S7-M1-MOp" id="EM4-fn-Prz"/>
+                <outlet property="titleTextField" destination="tNk-HQ-1Kz" id="4rZ-oL-Zpo"/>
+                <outlet property="vNavigationBar" destination="UoQ-Z1-adz" id="gde-wa-rwg"/>
+                <outlet property="vStatusBar" destination="QLN-Zy-LKt" id="eLM-9m-WpW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="requiredLabels" destination="DFP-9L-yyU" collectionClass="NSMutableArray" id="4K8-ca-Gih"/>
+                <outletCollection property="requiredLabels" destination="0y5-ZF-Uw7" collectionClass="NSMutableArray" id="8Zv-cs-8Pz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QLN-Zy-LKt" customClass="StatusBarView" customModule="TekPass_Keep" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UoQ-Z1-adz" customClass="NavigationBarView" customModule="TekPass_Keep" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="xpD-8a-YD5"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*必填" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFP-9L-yyU">
+                    <rect key="frame" x="40" y="197" width="354" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*必填" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0y5-ZF-Uw7">
+                    <rect key="frame" x="40" y="374" width="354" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="標題" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tNk-HQ-1Kz" userLabel="TitleTextField" customClass="CustomTextField" customModule="TekPass_Keep" customModuleProvider="target">
+                    <rect key="frame" x="20" y="122" width="374" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="CCH-9d-cpi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textFieldDidChanged:" destination="-1" eventType="editingChanged" id="Sbl-6K-W8N"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6S7-M1-MOp">
+                    <rect key="frame" x="358.5" y="197" width="35.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="O1H-sH-K87" userLabel="NoteTextView" customClass="IQTextView" customModule="IQKeyboardManagerSwift">
+                    <rect key="frame" x="20" y="219" width="374" height="150"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="zjJ-gy-Z8n"/>
+                    </constraints>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                            <color key="value" systemColor="placeholderTextColor"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="備註"/>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o20-Y6-lDH">
+                    <rect key="frame" x="358.5" y="374" width="35.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tNk-HQ-1Kz" secondAttribute="trailing" constant="20" id="04H-GU-JdB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0y5-ZF-Uw7" secondAttribute="trailing" constant="20" id="1I8-qD-mlw"/>
+                <constraint firstAttribute="trailing" secondItem="QLN-Zy-LKt" secondAttribute="trailing" id="7sZ-Fm-FAX"/>
+                <constraint firstItem="UoQ-Z1-adz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Cjk-yx-w8e"/>
+                <constraint firstItem="UoQ-Z1-adz" firstAttribute="top" secondItem="QLN-Zy-LKt" secondAttribute="bottom" id="IoF-0o-jsD"/>
+                <constraint firstItem="QLN-Zy-LKt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JYB-4w-fIV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DFP-9L-yyU" secondAttribute="trailing" constant="20" id="KRe-yf-kae"/>
+                <constraint firstItem="tNk-HQ-1Kz" firstAttribute="top" secondItem="UoQ-Z1-adz" secondAttribute="bottom" constant="30" id="PeK-es-2fw"/>
+                <constraint firstItem="UoQ-Z1-adz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Qan-os-Map"/>
+                <constraint firstItem="O1H-sH-K87" firstAttribute="top" secondItem="DFP-9L-yyU" secondAttribute="bottom" constant="5" id="T5U-kz-w1H"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="O1H-sH-K87" secondAttribute="trailing" constant="20" id="UL0-Y2-Oxk"/>
+                <constraint firstItem="O1H-sH-K87" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Xj9-15-MF2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UoQ-Z1-adz" secondAttribute="trailing" id="bSy-ZL-7ne"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="o20-Y6-lDH" secondAttribute="trailing" constant="20" id="c1m-4W-FHH"/>
+                <constraint firstItem="DFP-9L-yyU" firstAttribute="top" secondItem="tNk-HQ-1Kz" secondAttribute="bottom" constant="5" id="f3z-1o-q2P"/>
+                <constraint firstItem="o20-Y6-lDH" firstAttribute="top" secondItem="O1H-sH-K87" secondAttribute="bottom" constant="5" id="j6w-fu-aQ3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6S7-M1-MOp" secondAttribute="trailing" constant="20" id="kqL-cl-UnI"/>
+                <constraint firstItem="tNk-HQ-1Kz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="lQh-qT-0YV"/>
+                <constraint firstItem="6S7-M1-MOp" firstAttribute="top" secondItem="tNk-HQ-1Kz" secondAttribute="bottom" constant="5" id="lrZ-pY-3Wv"/>
+                <constraint firstItem="DFP-9L-yyU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="pou-Vs-CJR"/>
+                <constraint firstItem="0y5-ZF-Uw7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="vhX-L1-BZ7"/>
+                <constraint firstItem="0y5-ZF-Uw7" firstAttribute="top" secondItem="O1H-sH-K87" secondAttribute="bottom" constant="5" id="whe-hq-ZCC"/>
+                <constraint firstItem="QLN-Zy-LKt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xAr-AV-gbr"/>
+            </constraints>
+            <point key="canvasLocation" x="133" y="85"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

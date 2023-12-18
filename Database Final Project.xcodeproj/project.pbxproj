@@ -1,0 +1,1445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C04679F28F816180046BBB6 /* NewAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C04679D28F816180046BBB6 /* NewAddViewController.swift */; };
+		0C0467A028F816180046BBB6 /* NewAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C04679E28F816180046BBB6 /* NewAddViewController.xib */; };
+		0C0467A428F8176A0046BBB6 /* NewGenerateRandomPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0467A228F8176A0046BBB6 /* NewGenerateRandomPasswordViewController.swift */; };
+		0C0467A528F8176A0046BBB6 /* NewGenerateRandomPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C0467A328F8176A0046BBB6 /* NewGenerateRandomPasswordViewController.xib */; };
+		0C315E782897E81900035448 /* AutoFillViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C315E702897E81900035448 /* AutoFillViewController.xib */; };
+		0C315E792897E81900035448 /* AutoFillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C315E712897E81900035448 /* AutoFillViewController.swift */; };
+		0C315E882897E82B00035448 /* PublicClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C315E802897E82B00035448 /* PublicClass.swift */; };
+		0C34665C28C12C80001E8630 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A5FB6E2866100900A59BF0 /* Alert.swift */; };
+		0C42418928BDF8F200D055A2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C42418728BDF8F200D055A2 /* SearchViewController.swift */; };
+		0C42418A28BDF8F200D055A2 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C42418828BDF8F200D055A2 /* SearchViewController.xib */; };
+		0C42418E28BDFACB00D055A2 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C42418C28BDFACB00D055A2 /* SearchTableViewCell.swift */; };
+		0C42418F28BDFACB00D055A2 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C42418D28BDFACB00D055A2 /* SearchTableViewCell.xib */; };
+		0C8930CA2876B51C004CD501 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8930C92876B51C004CD501 /* AuthenticationServices.framework */; };
+		0C8930D52876B51D004CD501 /* PasswordAutoFill.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0C8930C82876B51C004CD501 /* PasswordAutoFill.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0C8930DA2876B52B004CD501 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8930C92876B51C004CD501 /* AuthenticationServices.framework */; };
+		0C8BE1532934C3F000B78EB2 /* PasscodeTextFieldImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BE1522934C3F000B78EB2 /* PasscodeTextFieldImplementation.swift */; };
+		0C8BE1542934C3F000B78EB2 /* PasscodeTextFieldImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BE1522934C3F000B78EB2 /* PasscodeTextFieldImplementation.swift */; };
+		0CA1920E290142C10063E530 /* CKBackupRestoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1920C290142C10063E530 /* CKBackupRestoreViewController.swift */; };
+		0CA1920F290142C10063E530 /* CKBackupRestoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA1920D290142C10063E530 /* CKBackupRestoreViewController.xib */; };
+		0CA1921329014A830063E530 /* BackupHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1921129014A830063E530 /* BackupHeaderTableViewCell.swift */; };
+		0CA1921429014A830063E530 /* BackupHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA1921229014A830063E530 /* BackupHeaderTableViewCell.xib */; };
+		0CA1921729029BAB0063E530 /* BackupOperationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1921529029BAB0063E530 /* BackupOperationTableViewCell.swift */; };
+		0CA1921829029BAB0063E530 /* BackupOperationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA1921629029BAB0063E530 /* BackupOperationTableViewCell.xib */; };
+		0CA1921B29029BE20063E530 /* BackupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1921929029BE20063E530 /* BackupTableViewCell.swift */; };
+		0CA1921C29029BE20063E530 /* BackupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA1921A29029BE20063E530 /* BackupTableViewCell.xib */; };
+		0CA4CF7E28B382790076DFE5 /* SingletonPatternOfPasswordAndNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA4CF7D28B382790076DFE5 /* SingletonPatternOfPasswordAndNotes.swift */; };
+		0CD050E328B4E11200A82828 /* EditPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD050E128B4E11200A82828 /* EditPasswordViewController.swift */; };
+		0CD050E428B4E11200A82828 /* EditPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD050E228B4E11200A82828 /* EditPasswordViewController.xib */; };
+		0CD050E728B565E500A82828 /* EditNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD050E528B565E500A82828 /* EditNotesViewController.swift */; };
+		0CD050E828B565E500A82828 /* EditNotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD050E628B565E500A82828 /* EditNotesViewController.xib */; };
+		0CF47FC228BFC81700980C6E /* SingletonPatternOfPasswordAndNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA4CF7D28B382790076DFE5 /* SingletonPatternOfPasswordAndNotes.swift */; };
+		0CF9AAA028AA12A600F7888D /* AddPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF9AA9E28AA12A600F7888D /* AddPasswordViewController.swift */; };
+		0CF9AAA128AA12A600F7888D /* AddPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CF9AA9F28AA12A600F7888D /* AddPasswordViewController.xib */; };
+		0CF9AAA428AA12BD00F7888D /* AddNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF9AAA228AA12BD00F7888D /* AddNotesViewController.swift */; };
+		0CF9AAA528AA12BD00F7888D /* AddNotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CF9AAA328AA12BD00F7888D /* AddNotesViewController.xib */; };
+		25C27170B211404EDBF80446 /* Pods_PasswordAutoFill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFBBA9F0C78CA0BE5BC6C10 /* Pods_PasswordAutoFill.framework */; };
+		736B695905DEEC0026662ECF /* Pods_Database_Final_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CD1632BCB3A498E0B24F31 /* Pods_Database_Final_Project.framework */; };
+		7438052028B491D5009CD8AF /* LocalDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438051F28B491D5009CD8AF /* LocalDatabase.swift */; };
+		7438053828BF64B2009CD8AF /* LocalDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7438051F28B491D5009CD8AF /* LocalDatabase.swift */; };
+		7438053928BF651E009CD8AF /* PasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025992B286EC56200882615 /* PasswordModel.swift */; };
+		7438053A28BF6521009CD8AF /* NotesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A459428717A9D007492A5 /* NotesModel.swift */; };
+		74C5D4082906AE2A00E11388 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C5D4072906AE2A00E11388 /* Date+Extensions.swift */; };
+		8F87D7ED2B2D86E400CF417E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F87D7EB2B2D86E400CF417E /* RegisterViewController.swift */; };
+		8F87D7EE2B2D86E400CF417E /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F87D7EC2B2D86E400CF417E /* RegisterViewController.xib */; };
+		8F87D7F62B2E007200CF417E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F87D7F52B2E007200CF417E /* GoogleService-Info.plist */; };
+		8F87D7F92B30717D00CF417E /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F87D7F72B30717D00CF417E /* ResetPasswordViewController.swift */; };
+		8F87D7FA2B30717D00CF417E /* ResetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F87D7F82B30717D00CF417E /* ResetPasswordViewController.xib */; };
+		8F87D7FC2B30BB7100CF417E /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F87D7FB2B30BB7000CF417E /* AuthenticationManager.swift */; };
+		D007F12C28C255C10059AFA2 /* CryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D007F12B28C255C10059AFA2 /* CryptoManager.swift */; };
+		D00E7598298D5EB800FE1C5E /* iCloudEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E7597298D5EB800FE1C5E /* iCloudEntity.swift */; };
+		D00E7599298D5EDB00FE1C5E /* iCloudEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E7597298D5EB800FE1C5E /* iCloudEntity.swift */; };
+		D00E75A1298E7A3500FE1C5E /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E75A0298E7A3500FE1C5E /* UIImage+Extensions.swift */; };
+		D00E75A2298E7A3500FE1C5E /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E75A0298E7A3500FE1C5E /* UIImage+Extensions.swift */; };
+		D00E75A4298E933200FE1C5E /* UserNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E75A3298E933200FE1C5E /* UserNotifications.swift */; };
+		D00E75A82993907900FE1C5E /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E75A72993907900FE1C5E /* UIAlertController+Extensions.swift */; };
+		D00E75A92993907900FE1C5E /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E75A72993907900FE1C5E /* UIAlertController+Extensions.swift */; };
+		D0157C8D28F7DA3300A3C48B /* CloudKitDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0157C8C28F7DA3300A3C48B /* CloudKitDatabase.swift */; };
+		D020A4F329508C6300756A9E /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D020A4F229508C6300756A9E /* SFSymbols.swift */; };
+		D020A4F429508DB500756A9E /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D020A4F229508C6300756A9E /* SFSymbols.swift */; };
+		D025991C286E97D600882615 /* PasswordMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025991A286E97D600882615 /* PasswordMainViewController.swift */; };
+		D025991D286E97D600882615 /* PasswordMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D025991B286E97D600882615 /* PasswordMainViewController.xib */; };
+		D0259920286E97ED00882615 /* NotesMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025991E286E97ED00882615 /* NotesMainViewController.swift */; };
+		D0259921286E97ED00882615 /* NotesMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D025991F286E97ED00882615 /* NotesMainViewController.xib */; };
+		D0259924286E97FE00882615 /* SettingsMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0259922286E97FE00882615 /* SettingsMainViewController.swift */; };
+		D0259925286E97FE00882615 /* SettingsMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0259923286E97FE00882615 /* SettingsMainViewController.xib */; };
+		D0259928286EAD3100882615 /* PasswordMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0259926286EAD3100882615 /* PasswordMainTableViewCell.swift */; };
+		D0259929286EAD3100882615 /* PasswordMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0259927286EAD3100882615 /* PasswordMainTableViewCell.xib */; };
+		D025992C286EC56200882615 /* PasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025992B286EC56200882615 /* PasswordModel.swift */; };
+		D0259931287175B000882615 /* NotesMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025992F287175B000882615 /* NotesMainTableViewCell.swift */; };
+		D0259932287175B000882615 /* NotesMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0259930287175B000882615 /* NotesMainTableViewCell.xib */; };
+		D026BBA528E9857B00BAA749 /* RealtimeDatabaseUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = D026BBA428E9857B00BAA749 /* RealtimeDatabaseUpload.swift */; };
+		D026BBA728E9895500BAA749 /* CryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D007F12B28C255C10059AFA2 /* CryptoManager.swift */; };
+		D031F57D2977D58800116BD5 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D038806A28FFA41300C69BD8 /* UIColor+Extensions.swift */; };
+		D034ECC028A89D7B006856FB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D034ECC228A89D7B006856FB /* Localizable.strings */; };
+		D034ECC428A89DD5006856FB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D034ECC228A89D7B006856FB /* Localizable.strings */; };
+		D034ECC828A8A60B006856FB /* Localizables.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034ECC728A8A60B006856FB /* Localizables.swift */; };
+		D034ECD728AFF006006856FB /* GenerateRandomPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D034ECD528AFF006006856FB /* GenerateRandomPasswordViewController.xib */; };
+		D034ECD828AFF006006856FB /* GenerateRandomPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034ECD628AFF006006856FB /* GenerateRandomPasswordViewController.swift */; };
+		D034ECDD28B0AF52006856FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D034ECDF28B0AF52006856FB /* InfoPlist.strings */; };
+		D034ECE428B0CD40006856FB /* SpinningCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034ECE328B0CD40006856FB /* SpinningCircleView.swift */; };
+		D036FF0728E8A30400E6D990 /* Localizables.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034ECC728A8A60B006856FB /* Localizables.swift */; };
+		D036FF0B28E9438200E6D990 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036FF0A28E9438200E6D990 /* UIView+Extensions.swift */; };
+		D036FF0D28E9439900E6D990 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036FF0C28E9439900E6D990 /* UIViewController+Extensions.swift */; };
+		D036FF0F28E943B800E6D990 /* Notification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036FF0E28E943B800E6D990 /* Notification+Extensions.swift */; };
+		D036FF1128E943D800E6D990 /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036FF1028E943D800E6D990 /* Encodable+Extensions.swift */; };
+		D036FF1228E9442100E6D990 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036FF0A28E9438200E6D990 /* UIView+Extensions.swift */; };
+		D036FF1328E9442400E6D990 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036FF0C28E9439900E6D990 /* UIViewController+Extensions.swift */; };
+		D036FF1428E9442800E6D990 /* Notification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036FF0E28E943B800E6D990 /* Notification+Extensions.swift */; };
+		D036FF1528E9442B00E6D990 /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036FF1028E943D800E6D990 /* Encodable+Extensions.swift */; };
+		D038806B28FFA41300C69BD8 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D038806A28FFA41300C69BD8 /* UIColor+Extensions.swift */; };
+		D038806F2901285700C69BD8 /* AutoFillTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D038806D2901285700C69BD8 /* AutoFillTVC.swift */; };
+		D03880702901285700C69BD8 /* AutoFillTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D038806E2901285700C69BD8 /* AutoFillTVC.xib */; };
+		D03D4DBD2909671C00B48679 /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03D4DBC2909671C00B48679 /* UIBarButtonItem+Extensions.swift */; };
+		D0499D4128B9CE8800EEDA28 /* ScreenIdleTimerUIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0499D3F28B9CE8800EEDA28 /* ScreenIdleTimerUIApplication.swift */; };
+		D0499D4228B9CE8800EEDA28 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0499D4028B9CE8800EEDA28 /* main.swift */; };
+		D05A459528717A9D007492A5 /* NotesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A459428717A9D007492A5 /* NotesModel.swift */; };
+		D05A4598287180FB007492A5 /* SettingsMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A4596287180FB007492A5 /* SettingsMainTableViewCell.swift */; };
+		D05A4599287180FB007492A5 /* SettingsMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05A4597287180FB007492A5 /* SettingsMainTableViewCell.xib */; };
+		D05A459F28719C56007492A5 /* CommandBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A459E28719C56007492A5 /* CommandBase.swift */; };
+		D083F3BB2943571D00E4A9F8 /* CheckBoxButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F3B92943571D00E4A9F8 /* CheckBoxButtonView.swift */; };
+		D083F3BC2943571D00E4A9F8 /* CheckBoxButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F3B92943571D00E4A9F8 /* CheckBoxButtonView.swift */; };
+		D083F3BD2943571D00E4A9F8 /* CheckBoxButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D083F3BA2943571D00E4A9F8 /* CheckBoxButtonView.xib */; };
+		D083F3BE2943571D00E4A9F8 /* CheckBoxButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D083F3BA2943571D00E4A9F8 /* CheckBoxButtonView.xib */; };
+		D08BA15E29BC40E3007EEFDD /* AppDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A0B27A29557FE400639A91 /* AppDefine.swift */; };
+		D099A2C228F528BB000D90BD /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D099A2C128F528BB000D90BD /* String+Extensions.swift */; };
+		D099A2C328F529B2000D90BD /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D099A2C128F528BB000D90BD /* String+Extensions.swift */; };
+		D099A2C528F52E5B000D90BD /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D099A2C428F52E5B000D90BD /* Data+Extensions.swift */; };
+		D099ECAA28F9987D006FFF9C /* ChromeExtensionDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D099ECA928F9987D006FFF9C /* ChromeExtensionDataInfo.swift */; };
+		D09F128C2910C07B004D38B9 /* CustomPasswordLockTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09F128B2910C07B004D38B9 /* CustomPasswordLockTextField.swift */; };
+		D09F128E2910D405004D38B9 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09F128D2910D405004D38B9 /* CustomTextField.swift */; };
+		D09F128F2910D405004D38B9 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09F128D2910D405004D38B9 /* CustomTextField.swift */; };
+		D09F12902910D48C004D38B9 /* CustomPasswordLockTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09F128B2910C07B004D38B9 /* CustomPasswordLockTextField.swift */; };
+		D0A0B27B29557FE400639A91 /* AppDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A0B27A29557FE400639A91 /* AppDefine.swift */; };
+		D0A5FB6F2866100900A59BF0 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A5FB6E2866100900A59BF0 /* Alert.swift */; };
+		D0A5FB73286613BD00A59BF0 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A5FB72286613BD00A59BF0 /* UserPreferences.swift */; };
+		D0A61915290CEE380074AE58 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A61914290CEE380074AE58 /* UIApplication+Extensions.swift */; };
+		D0C2B78B28F570DD004658C9 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D099A2C428F52E5B000D90BD /* Data+Extensions.swift */; };
+		D0D2A5E728DD9CFE0010C791 /* FirebaseRealtimeDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D2A5E628DD9CFE0010C791 /* FirebaseRealtimeDatabase.swift */; };
+		D0D6C7FF2860ABCB006A3A5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6C7FE2860ABCB006A3A5B /* AppDelegate.swift */; };
+		D0D6C8012860ABCB006A3A5B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6C8002860ABCB006A3A5B /* SceneDelegate.swift */; };
+		D0D6C8082860ABCD006A3A5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D6C8072860ABCD006A3A5B /* Assets.xcassets */; };
+		D0D6C80B2860ABCD006A3A5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D6C8092860ABCD006A3A5B /* LaunchScreen.storyboard */; };
+		D0D6C8172860AC14006A3A5B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6C8152860AC14006A3A5B /* MainViewController.swift */; };
+		D0D6C8182860AC14006A3A5B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0D6C8162860AC14006A3A5B /* MainViewController.xib */; };
+		D0D6C81A2860AC28006A3A5B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6C8192860AC28006A3A5B /* BaseViewController.swift */; };
+		D0D92C6E2955752E000E52B8 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A5FB72286613BD00A59BF0 /* UserPreferences.swift */; };
+		D0F61C6229A8FD6C00ED0FBA /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F61C6129A8FD6C00ED0FBA /* NavigationBarView.swift */; };
+		D0F61C6429A8FD7800ED0FBA /* NavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0F61C6329A8FD7800ED0FBA /* NavigationBarView.xib */; };
+		D0F61C6729A9B35400ED0FBA /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F61C6629A9B35400ED0FBA /* StatusBarView.swift */; };
+		D0FAC3DA2931FA9000611C5C /* PasscodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FAC3D92931FA9000611C5C /* PasscodeTextField.swift */; };
+		D0FAC3DB2931FA9000611C5C /* PasscodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FAC3D92931FA9000611C5C /* PasscodeTextField.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C8930D32876B51D004CD501 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0D6C7F32860ABCA006A3A5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C8930C72876B51C004CD501;
+			remoteInfo = PasswordAutoFill;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0C8930D62876B51D004CD501 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0C8930D52876B51D004CD501 /* PasswordAutoFill.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0C04679D28F816180046BBB6 /* NewAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAddViewController.swift; sourceTree = "<group>"; };
+		0C04679E28F816180046BBB6 /* NewAddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewAddViewController.xib; sourceTree = "<group>"; };
+		0C0467A228F8176A0046BBB6 /* NewGenerateRandomPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGenerateRandomPasswordViewController.swift; sourceTree = "<group>"; };
+		0C0467A328F8176A0046BBB6 /* NewGenerateRandomPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewGenerateRandomPasswordViewController.xib; sourceTree = "<group>"; };
+		0C315E702897E81900035448 /* AutoFillViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoFillViewController.xib; sourceTree = "<group>"; };
+		0C315E712897E81900035448 /* AutoFillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoFillViewController.swift; sourceTree = "<group>"; };
+		0C315E802897E82B00035448 /* PublicClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicClass.swift; sourceTree = "<group>"; };
+		0C42418728BDF8F200D055A2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		0C42418828BDF8F200D055A2 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		0C42418C28BDFACB00D055A2 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		0C42418D28BDFACB00D055A2 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
+		0C8930C82876B51C004CD501 /* PasswordAutoFill.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PasswordAutoFill.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C8930C92876B51C004CD501 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		0C8930D12876B51D004CD501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C8930D22876B51D004CD501 /* PasswordAutoFill.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PasswordAutoFill.entitlements; sourceTree = "<group>"; };
+		0C8BE1522934C3F000B78EB2 /* PasscodeTextFieldImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeTextFieldImplementation.swift; sourceTree = "<group>"; };
+		0CA1920C290142C10063E530 /* CKBackupRestoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKBackupRestoreViewController.swift; sourceTree = "<group>"; };
+		0CA1920D290142C10063E530 /* CKBackupRestoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CKBackupRestoreViewController.xib; sourceTree = "<group>"; };
+		0CA1921129014A830063E530 /* BackupHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		0CA1921229014A830063E530 /* BackupHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackupHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		0CA1921529029BAB0063E530 /* BackupOperationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupOperationTableViewCell.swift; sourceTree = "<group>"; };
+		0CA1921629029BAB0063E530 /* BackupOperationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackupOperationTableViewCell.xib; sourceTree = "<group>"; };
+		0CA1921929029BE20063E530 /* BackupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupTableViewCell.swift; sourceTree = "<group>"; };
+		0CA1921A29029BE20063E530 /* BackupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackupTableViewCell.xib; sourceTree = "<group>"; };
+		0CA4CF7D28B382790076DFE5 /* SingletonPatternOfPasswordAndNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonPatternOfPasswordAndNotes.swift; sourceTree = "<group>"; };
+		0CD050E128B4E11200A82828 /* EditPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPasswordViewController.swift; sourceTree = "<group>"; };
+		0CD050E228B4E11200A82828 /* EditPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditPasswordViewController.xib; sourceTree = "<group>"; };
+		0CD050E528B565E500A82828 /* EditNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNotesViewController.swift; sourceTree = "<group>"; };
+		0CD050E628B565E500A82828 /* EditNotesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditNotesViewController.xib; sourceTree = "<group>"; };
+		0CF9AA9E28AA12A600F7888D /* AddPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPasswordViewController.swift; sourceTree = "<group>"; };
+		0CF9AA9F28AA12A600F7888D /* AddPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPasswordViewController.xib; sourceTree = "<group>"; };
+		0CF9AAA228AA12BD00F7888D /* AddNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotesViewController.swift; sourceTree = "<group>"; };
+		0CF9AAA328AA12BD00F7888D /* AddNotesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNotesViewController.xib; sourceTree = "<group>"; };
+		103A093A8344240D212232C7 /* Pods-PasswordAutoFill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordAutoFill.debug.xcconfig"; path = "Target Support Files/Pods-PasswordAutoFill/Pods-PasswordAutoFill.debug.xcconfig"; sourceTree = "<group>"; };
+		36F2A6CFBA93FA1D5DAF0B87 /* Pods-Database Final Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Database Final Project.debug.xcconfig"; path = "Target Support Files/Pods-Database Final Project/Pods-Database Final Project.debug.xcconfig"; sourceTree = "<group>"; };
+		3C9DCFE07DF96CA617DD749B /* Pods-TekPass Keep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TekPass Keep.debug.xcconfig"; path = "Target Support Files/Pods-TekPass Keep/Pods-TekPass Keep.debug.xcconfig"; sourceTree = "<group>"; };
+		61CD1632BCB3A498E0B24F31 /* Pods_Database_Final_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Database_Final_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7438051F28B491D5009CD8AF /* LocalDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDatabase.swift; sourceTree = "<group>"; };
+		74C5D4072906AE2A00E11388 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		8F87D7EB2B2D86E400CF417E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8F87D7EC2B2D86E400CF417E /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		8F87D7F52B2E007200CF417E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8F87D7F72B30717D00CF417E /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		8F87D7F82B30717D00CF417E /* ResetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResetPasswordViewController.xib; sourceTree = "<group>"; };
+		8F87D7FB2B30BB7000CF417E /* AuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		965A53DDC048481F639B61A9 /* Pods-TekPass Keep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TekPass Keep.release.xcconfig"; path = "Target Support Files/Pods-TekPass Keep/Pods-TekPass Keep.release.xcconfig"; sourceTree = "<group>"; };
+		9F125E1EBF3A89026F680FFA /* Pods-PasswordAutoFill.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordAutoFill.release.xcconfig"; path = "Target Support Files/Pods-PasswordAutoFill/Pods-PasswordAutoFill.release.xcconfig"; sourceTree = "<group>"; };
+		AEFBBA9F0C78CA0BE5BC6C10 /* Pods_PasswordAutoFill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PasswordAutoFill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C86599C0F0272DC7DE3957A9 /* Pods-Database Final Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Database Final Project.release.xcconfig"; path = "Target Support Files/Pods-Database Final Project/Pods-Database Final Project.release.xcconfig"; sourceTree = "<group>"; };
+		D007F12B28C255C10059AFA2 /* CryptoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoManager.swift; sourceTree = "<group>"; };
+		D00E7597298D5EB800FE1C5E /* iCloudEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloudEntity.swift; sourceTree = "<group>"; };
+		D00E75A0298E7A3500FE1C5E /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		D00E75A3298E933200FE1C5E /* UserNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotifications.swift; sourceTree = "<group>"; };
+		D00E75A72993907900FE1C5E /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
+		D0157C8C28F7DA3300A3C48B /* CloudKitDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitDatabase.swift; sourceTree = "<group>"; };
+		D020A4F229508C6300756A9E /* SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols.swift; sourceTree = "<group>"; };
+		D025991A286E97D600882615 /* PasswordMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordMainViewController.swift; sourceTree = "<group>"; };
+		D025991B286E97D600882615 /* PasswordMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordMainViewController.xib; sourceTree = "<group>"; };
+		D025991E286E97ED00882615 /* NotesMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesMainViewController.swift; sourceTree = "<group>"; };
+		D025991F286E97ED00882615 /* NotesMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesMainViewController.xib; sourceTree = "<group>"; };
+		D0259922286E97FE00882615 /* SettingsMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMainViewController.swift; sourceTree = "<group>"; };
+		D0259923286E97FE00882615 /* SettingsMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsMainViewController.xib; sourceTree = "<group>"; };
+		D0259926286EAD3100882615 /* PasswordMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordMainTableViewCell.swift; sourceTree = "<group>"; };
+		D0259927286EAD3100882615 /* PasswordMainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordMainTableViewCell.xib; sourceTree = "<group>"; };
+		D025992B286EC56200882615 /* PasswordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordModel.swift; sourceTree = "<group>"; };
+		D025992F287175B000882615 /* NotesMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesMainTableViewCell.swift; sourceTree = "<group>"; };
+		D0259930287175B000882615 /* NotesMainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesMainTableViewCell.xib; sourceTree = "<group>"; };
+		D026BBA428E9857B00BAA749 /* RealtimeDatabaseUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeDatabaseUpload.swift; sourceTree = "<group>"; };
+		D034ECBC28A89D22006856FB /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		D034ECC128A89D7B006856FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D034ECC328A89D7E006856FB /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D034ECC728A8A60B006856FB /* Localizables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizables.swift; sourceTree = "<group>"; };
+		D034ECD528AFF006006856FB /* GenerateRandomPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenerateRandomPasswordViewController.xib; sourceTree = "<group>"; };
+		D034ECD628AFF006006856FB /* GenerateRandomPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateRandomPasswordViewController.swift; sourceTree = "<group>"; };
+		D034ECDE28B0AF52006856FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D034ECE028B0AF54006856FB /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		D034ECE328B0CD40006856FB /* SpinningCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinningCircleView.swift; sourceTree = "<group>"; };
+		D036FF0A28E9438200E6D990 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		D036FF0C28E9439900E6D990 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		D036FF0E28E943B800E6D990 /* Notification+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extensions.swift"; sourceTree = "<group>"; };
+		D036FF1028E943D800E6D990 /* Encodable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extensions.swift"; sourceTree = "<group>"; };
+		D038806A28FFA41300C69BD8 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		D038806D2901285700C69BD8 /* AutoFillTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoFillTVC.swift; sourceTree = "<group>"; };
+		D038806E2901285700C69BD8 /* AutoFillTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoFillTVC.xib; sourceTree = "<group>"; };
+		D03D4DBC2909671C00B48679 /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
+		D0499D3F28B9CE8800EEDA28 /* ScreenIdleTimerUIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenIdleTimerUIApplication.swift; sourceTree = "<group>"; };
+		D0499D4028B9CE8800EEDA28 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D05A459428717A9D007492A5 /* NotesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesModel.swift; sourceTree = "<group>"; };
+		D05A4596287180FB007492A5 /* SettingsMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMainTableViewCell.swift; sourceTree = "<group>"; };
+		D05A4597287180FB007492A5 /* SettingsMainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsMainTableViewCell.xib; sourceTree = "<group>"; };
+		D05A459E28719C56007492A5 /* CommandBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandBase.swift; sourceTree = "<group>"; };
+		D083F3B92943571D00E4A9F8 /* CheckBoxButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxButtonView.swift; sourceTree = "<group>"; };
+		D083F3BA2943571D00E4A9F8 /* CheckBoxButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckBoxButtonView.xib; sourceTree = "<group>"; };
+		D099A2C128F528BB000D90BD /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		D099A2C428F52E5B000D90BD /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		D099ECA928F9987D006FFF9C /* ChromeExtensionDataInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromeExtensionDataInfo.swift; sourceTree = "<group>"; };
+		D09F128B2910C07B004D38B9 /* CustomPasswordLockTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPasswordLockTextField.swift; sourceTree = "<group>"; };
+		D09F128D2910D405004D38B9 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		D0A0B27A29557FE400639A91 /* AppDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefine.swift; sourceTree = "<group>"; };
+		D0A5FB6E2866100900A59BF0 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		D0A5FB72286613BD00A59BF0 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		D0A61914290CEE380074AE58 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		D0AD76022960515C00460F37 /* Database Final Project.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Database Final Project.entitlements"; sourceTree = "<group>"; };
+		D0D2A5E628DD9CFE0010C791 /* FirebaseRealtimeDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRealtimeDatabase.swift; sourceTree = "<group>"; };
+		D0D6C7FB2860ABCB006A3A5B /* Database Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Database Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D6C7FE2860ABCB006A3A5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0D6C8002860ABCB006A3A5B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D0D6C8072860ABCD006A3A5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0D6C80A2860ABCD006A3A5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0D6C80C2860ABCD006A3A5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0D6C8152860AC14006A3A5B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D0D6C8162860AC14006A3A5B /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		D0D6C8192860AC28006A3A5B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D0F61C6129A8FD6C00ED0FBA /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		D0F61C6329A8FD7800ED0FBA /* NavigationBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBarView.xib; sourceTree = "<group>"; };
+		D0F61C6629A9B35400ED0FBA /* StatusBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
+		D0FAC3D92931FA9000611C5C /* PasscodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeTextField.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C8930C52876B51C004CD501 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C8930CA2876B51C004CD501 /* AuthenticationServices.framework in Frameworks */,
+				25C27170B211404EDBF80446 /* Pods_PasswordAutoFill.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D6C7F82860ABCB006A3A5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C8930DA2876B52B004CD501 /* AuthenticationServices.framework in Frameworks */,
+				736B695905DEEC0026662ECF /* Pods_Database_Final_Project.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C04679C28F815B60046BBB6 /* AddNewVC */ = {
+			isa = PBXGroup;
+			children = (
+				0C04679D28F816180046BBB6 /* NewAddViewController.swift */,
+				0C04679E28F816180046BBB6 /* NewAddViewController.xib */,
+				0C0467A228F8176A0046BBB6 /* NewGenerateRandomPasswordViewController.swift */,
+				0C0467A328F8176A0046BBB6 /* NewGenerateRandomPasswordViewController.xib */,
+			);
+			path = AddNewVC;
+			sourceTree = "<group>";
+		};
+		0C315E6F2897E81900035448 /* AutoFillVC */ = {
+			isa = PBXGroup;
+			children = (
+				0C315E712897E81900035448 /* AutoFillViewController.swift */,
+				0C315E702897E81900035448 /* AutoFillViewController.xib */,
+				D038806C2901285700C69BD8 /* Components */,
+			);
+			path = AutoFillVC;
+			sourceTree = "<group>";
+		};
+		0C315E7E2897E82B00035448 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C315E802897E82B00035448 /* PublicClass.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0C42418628BDF89000D055A2 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				0C42418728BDF8F200D055A2 /* SearchViewController.swift */,
+				0C42418828BDF8F200D055A2 /* SearchViewController.xib */,
+				D0159CC428E94CDB00117EA1 /* Components */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		0C8930CB2876B51C004CD501 /* PasswordAutoFill */ = {
+			isa = PBXGroup;
+			children = (
+				0C315E7E2897E82B00035448 /* Model */,
+				0C315E6F2897E81900035448 /* AutoFillVC */,
+				0C04679C28F815B60046BBB6 /* AddNewVC */,
+				0C8930D12876B51D004CD501 /* Info.plist */,
+				0C8930D22876B51D004CD501 /* PasswordAutoFill.entitlements */,
+			);
+			path = PasswordAutoFill;
+			sourceTree = "<group>";
+		};
+		0C8BE1512934C3AC00B78EB2 /* PasscodeTextField */ = {
+			isa = PBXGroup;
+			children = (
+				D0FAC3D92931FA9000611C5C /* PasscodeTextField.swift */,
+				0C8BE1522934C3F000B78EB2 /* PasscodeTextFieldImplementation.swift */,
+			);
+			path = PasscodeTextField;
+			sourceTree = "<group>";
+		};
+		0CA19206290142570063E530 /* iCloudBackup */ = {
+			isa = PBXGroup;
+			children = (
+				0CA1920C290142C10063E530 /* CKBackupRestoreViewController.swift */,
+				0CA1920D290142C10063E530 /* CKBackupRestoreViewController.xib */,
+				0CA1921029014A500063E530 /* Components */,
+			);
+			path = iCloudBackup;
+			sourceTree = "<group>";
+		};
+		0CA1921029014A500063E530 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0CA1921129014A830063E530 /* BackupHeaderTableViewCell.swift */,
+				0CA1921229014A830063E530 /* BackupHeaderTableViewCell.xib */,
+				0CA1921529029BAB0063E530 /* BackupOperationTableViewCell.swift */,
+				0CA1921629029BAB0063E530 /* BackupOperationTableViewCell.xib */,
+				0CA1921929029BE20063E530 /* BackupTableViewCell.swift */,
+				0CA1921A29029BE20063E530 /* BackupTableViewCell.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D0157C8928F7D99600A3C48B /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				D0D92C6D2955740B000E52B8 /* Local */,
+				D0157C8B28F7D9C000A3C48B /* iCloud */,
+				D0157C8A28F7D9AC00A3C48B /* Firebase Realtime Database */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		D0157C8A28F7D9AC00A3C48B /* Firebase Realtime Database */ = {
+			isa = PBXGroup;
+			children = (
+				D026BBA428E9857B00BAA749 /* RealtimeDatabaseUpload.swift */,
+				D0D2A5E628DD9CFE0010C791 /* FirebaseRealtimeDatabase.swift */,
+				D099ECA928F9987D006FFF9C /* ChromeExtensionDataInfo.swift */,
+			);
+			path = "Firebase Realtime Database";
+			sourceTree = "<group>";
+		};
+		D0157C8B28F7D9C000A3C48B /* iCloud */ = {
+			isa = PBXGroup;
+			children = (
+				D0157C8C28F7DA3300A3C48B /* CloudKitDatabase.swift */,
+				D00E7597298D5EB800FE1C5E /* iCloudEntity.swift */,
+			);
+			path = iCloud;
+			sourceTree = "<group>";
+		};
+		D0157C8E28F7DAE200A3C48B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				D025992B286EC56200882615 /* PasswordModel.swift */,
+				D05A459428717A9D007492A5 /* NotesModel.swift */,
+				0CA4CF7D28B382790076DFE5 /* SingletonPatternOfPasswordAndNotes.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		D0159CBE28E94C3900117EA1 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D0259922286E97FE00882615 /* SettingsMainViewController.swift */,
+				D0259923286E97FE00882615 /* SettingsMainViewController.xib */,
+				D0159CC328E94CC000117EA1 /* Components */,
+				8F87D7F72B30717D00CF417E /* ResetPasswordViewController.swift */,
+				8F87D7F82B30717D00CF417E /* ResetPasswordViewController.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D0159CBF28E94C4600117EA1 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				D025991E286E97ED00882615 /* NotesMainViewController.swift */,
+				D025991F286E97ED00882615 /* NotesMainViewController.xib */,
+				D0159CC228E94CAB00117EA1 /* Components */,
+				D0A0B2762955764700639A91 /* Add */,
+				D0A0B2752955763D00639A91 /* Edit */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		D0159CC028E94C4D00117EA1 /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				D025991A286E97D600882615 /* PasswordMainViewController.swift */,
+				D025991B286E97D600882615 /* PasswordMainViewController.xib */,
+				D0159CC128E94C9900117EA1 /* Components */,
+				D0D92C6F29557595000E52B8 /* Add */,
+				D0D92C702955759A000E52B8 /* Edit */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		D0159CC128E94C9900117EA1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D0259926286EAD3100882615 /* PasswordMainTableViewCell.swift */,
+				D0259927286EAD3100882615 /* PasswordMainTableViewCell.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D0159CC228E94CAB00117EA1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D025992F287175B000882615 /* NotesMainTableViewCell.swift */,
+				D0259930287175B000882615 /* NotesMainTableViewCell.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D0159CC328E94CC000117EA1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D05A4596287180FB007492A5 /* SettingsMainTableViewCell.swift */,
+				D05A4597287180FB007492A5 /* SettingsMainTableViewCell.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D0159CC428E94CDB00117EA1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0C42418C28BDFACB00D055A2 /* SearchTableViewCell.swift */,
+				0C42418D28BDFACB00D055A2 /* SearchTableViewCell.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D0259919286E97B200882615 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D0159CC028E94C4D00117EA1 /* Password */,
+				D0159CBF28E94C4600117EA1 /* Notes */,
+				D0159CBE28E94C3900117EA1 /* Settings */,
+				0C42418628BDF89000D055A2 /* Search */,
+				0CA19206290142570063E530 /* iCloudBackup */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D034ECBD28A89D58006856FB /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				D034ECC728A8A60B006856FB /* Localizables.swift */,
+				D034ECC228A89D7B006856FB /* Localizable.strings */,
+				D034ECDF28B0AF52006856FB /* InfoPlist.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		D038806928FFA3FC00C69BD8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D0A61914290CEE380074AE58 /* UIApplication+Extensions.swift */,
+				D03D4DBC2909671C00B48679 /* UIBarButtonItem+Extensions.swift */,
+				D0D92C6B295573A2000E52B8 /* Shared */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D038806C2901285700C69BD8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D038806D2901285700C69BD8 /* AutoFillTVC.swift */,
+				D038806E2901285700C69BD8 /* AutoFillTVC.xib */,
+			);
+			name = Components;
+			path = PasswordAutoFill/Components;
+			sourceTree = SOURCE_ROOT;
+		};
+		D0499D3E28B9CE6800EEDA28 /* ScreenIdleDetector */ = {
+			isa = PBXGroup;
+			children = (
+				D0499D4028B9CE8800EEDA28 /* main.swift */,
+				D0499D3F28B9CE8800EEDA28 /* ScreenIdleTimerUIApplication.swift */,
+			);
+			path = ScreenIdleDetector;
+			sourceTree = "<group>";
+		};
+		D083F3C229436A4300E4A9F8 /* CheckBoxButton */ = {
+			isa = PBXGroup;
+			children = (
+				D083F3B92943571D00E4A9F8 /* CheckBoxButtonView.swift */,
+				D083F3BA2943571D00E4A9F8 /* CheckBoxButtonView.xib */,
+			);
+			path = CheckBoxButton;
+			sourceTree = "<group>";
+		};
+		D0A0B2752955763D00639A91 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				0CD050E528B565E500A82828 /* EditNotesViewController.swift */,
+				0CD050E628B565E500A82828 /* EditNotesViewController.xib */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		D0A0B2762955764700639A91 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				0CF9AAA228AA12BD00F7888D /* AddNotesViewController.swift */,
+				0CF9AAA328AA12BD00F7888D /* AddNotesViewController.xib */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		D0A0B277295576C100639A91 /* Custom TextField */ = {
+			isa = PBXGroup;
+			children = (
+				D09F128B2910C07B004D38B9 /* CustomPasswordLockTextField.swift */,
+				D09F128D2910D405004D38B9 /* CustomTextField.swift */,
+				0C8BE1512934C3AC00B78EB2 /* PasscodeTextField */,
+			);
+			path = "Custom TextField";
+			sourceTree = "<group>";
+		};
+		D0A0B27829557E5800639A91 /* Progress View */ = {
+			isa = PBXGroup;
+			children = (
+				D034ECE328B0CD40006856FB /* SpinningCircleView.swift */,
+			);
+			path = "Progress View";
+			sourceTree = "<group>";
+		};
+		D0A0B27929557EFE00639A91 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D0D6C8072860ABCD006A3A5B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D0A5FB6D28660FBB00A59BF0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8F87D7FB2B30BB7000CF417E /* AuthenticationManager.swift */,
+				D0A5FB6E2866100900A59BF0 /* Alert.swift */,
+				D007F12B28C255C10059AFA2 /* CryptoManager.swift */,
+				D020A4F229508C6300756A9E /* SFSymbols.swift */,
+				D00E75A3298E933200FE1C5E /* UserNotifications.swift */,
+				D0499D3E28B9CE6800EEDA28 /* ScreenIdleDetector */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D0D6C7F22860ABCA006A3A5B = {
+			isa = PBXGroup;
+			children = (
+				D0D6C7FD2860ABCB006A3A5B /* Database Final Project */,
+				0C8930CB2876B51C004CD501 /* PasswordAutoFill */,
+				D0D6C7FC2860ABCB006A3A5B /* Products */,
+				DEF8DA00A9DF574C401E46A7 /* Pods */,
+				FE71C7FA82209CABACD2FF66 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D0D6C7FC2860ABCB006A3A5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0D6C7FB2860ABCB006A3A5B /* Database Final Project.app */,
+				0C8930C82876B51C004CD501 /* PasswordAutoFill.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0D6C7FD2860ABCB006A3A5B /* Database Final Project */ = {
+			isa = PBXGroup;
+			children = (
+				D0D6C7FE2860ABCB006A3A5B /* AppDelegate.swift */,
+				D0D6C8002860ABCB006A3A5B /* SceneDelegate.swift */,
+				D0D6C8092860ABCD006A3A5B /* LaunchScreen.storyboard */,
+				D0D6C80C2860ABCD006A3A5B /* Info.plist */,
+				8F87D7F52B2E007200CF417E /* GoogleService-Info.plist */,
+				D0AD76022960515C00460F37 /* Database Final Project.entitlements */,
+				D0D6C8142860AC00006A3A5B /* Model */,
+				D0D6C8132860ABFB006A3A5B /* Components */,
+				D0D6C8122860ABF3006A3A5B /* ViewControllers */,
+				D034ECBD28A89D58006856FB /* Localizable */,
+				D0A0B27929557EFE00639A91 /* Resources */,
+			);
+			path = "Database Final Project";
+			sourceTree = "<group>";
+		};
+		D0D6C8122860ABF3006A3A5B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0D6C8192860AC28006A3A5B /* BaseViewController.swift */,
+				D0D6C81F2860B728006A3A5B /* Initial Flow */,
+				D0259919286E97B200882615 /* Main */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D0D6C8132860ABFB006A3A5B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D0F61C6529A9B33C00ED0FBA /* StatusBarView */,
+				D0F61C6029A8FD5200ED0FBA /* NavigationBarView */,
+				D083F3C229436A4300E4A9F8 /* CheckBoxButton */,
+				D0A0B277295576C100639A91 /* Custom TextField */,
+				D0A0B27829557E5800639A91 /* Progress View */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D0D6C8142860AC00006A3A5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0A0B27A29557FE400639A91 /* AppDefine.swift */,
+				D05A459E28719C56007492A5 /* CommandBase.swift */,
+				D0A5FB72286613BD00A59BF0 /* UserPreferences.swift */,
+				D038806928FFA3FC00C69BD8 /* Extensions */,
+				D0157C8E28F7DAE200A3C48B /* Entity */,
+				D0157C8928F7D99600A3C48B /* Database */,
+				D0A5FB6D28660FBB00A59BF0 /* Utilities */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D0D6C81F2860B728006A3A5B /* Initial Flow */ = {
+			isa = PBXGroup;
+			children = (
+				D0D6C8152860AC14006A3A5B /* MainViewController.swift */,
+				D0D6C8162860AC14006A3A5B /* MainViewController.xib */,
+				8F87D7EB2B2D86E400CF417E /* RegisterViewController.swift */,
+				8F87D7EC2B2D86E400CF417E /* RegisterViewController.xib */,
+			);
+			path = "Initial Flow";
+			sourceTree = "<group>";
+		};
+		D0D92C6B295573A2000E52B8 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D038806A28FFA41300C69BD8 /* UIColor+Extensions.swift */,
+				D099A2C428F52E5B000D90BD /* Data+Extensions.swift */,
+				74C5D4072906AE2A00E11388 /* Date+Extensions.swift */,
+				D036FF1028E943D800E6D990 /* Encodable+Extensions.swift */,
+				D036FF0E28E943B800E6D990 /* Notification+Extensions.swift */,
+				D099A2C128F528BB000D90BD /* String+Extensions.swift */,
+				D00E75A72993907900FE1C5E /* UIAlertController+Extensions.swift */,
+				D00E75A0298E7A3500FE1C5E /* UIImage+Extensions.swift */,
+				D036FF0A28E9438200E6D990 /* UIView+Extensions.swift */,
+				D036FF0C28E9439900E6D990 /* UIViewController+Extensions.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D0D92C6D2955740B000E52B8 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				7438051F28B491D5009CD8AF /* LocalDatabase.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		D0D92C6F29557595000E52B8 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				0CF9AA9E28AA12A600F7888D /* AddPasswordViewController.swift */,
+				0CF9AA9F28AA12A600F7888D /* AddPasswordViewController.xib */,
+				D034ECD628AFF006006856FB /* GenerateRandomPasswordViewController.swift */,
+				D034ECD528AFF006006856FB /* GenerateRandomPasswordViewController.xib */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		D0D92C702955759A000E52B8 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				0CD050E128B4E11200A82828 /* EditPasswordViewController.swift */,
+				0CD050E228B4E11200A82828 /* EditPasswordViewController.xib */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		D0F61C6029A8FD5200ED0FBA /* NavigationBarView */ = {
+			isa = PBXGroup;
+			children = (
+				D0F61C6129A8FD6C00ED0FBA /* NavigationBarView.swift */,
+				D0F61C6329A8FD7800ED0FBA /* NavigationBarView.xib */,
+			);
+			path = NavigationBarView;
+			sourceTree = "<group>";
+		};
+		D0F61C6529A9B33C00ED0FBA /* StatusBarView */ = {
+			isa = PBXGroup;
+			children = (
+				D0F61C6629A9B35400ED0FBA /* StatusBarView.swift */,
+			);
+			path = StatusBarView;
+			sourceTree = "<group>";
+		};
+		DEF8DA00A9DF574C401E46A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				103A093A8344240D212232C7 /* Pods-PasswordAutoFill.debug.xcconfig */,
+				9F125E1EBF3A89026F680FFA /* Pods-PasswordAutoFill.release.xcconfig */,
+				3C9DCFE07DF96CA617DD749B /* Pods-TekPass Keep.debug.xcconfig */,
+				965A53DDC048481F639B61A9 /* Pods-TekPass Keep.release.xcconfig */,
+				36F2A6CFBA93FA1D5DAF0B87 /* Pods-Database Final Project.debug.xcconfig */,
+				C86599C0F0272DC7DE3957A9 /* Pods-Database Final Project.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FE71C7FA82209CABACD2FF66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C8930C92876B51C004CD501 /* AuthenticationServices.framework */,
+				AEFBBA9F0C78CA0BE5BC6C10 /* Pods_PasswordAutoFill.framework */,
+				61CD1632BCB3A498E0B24F31 /* Pods_Database_Final_Project.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C8930C72876B51C004CD501 /* PasswordAutoFill */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C8930D92876B51D004CD501 /* Build configuration list for PBXNativeTarget "PasswordAutoFill" */;
+			buildPhases = (
+				87187DD36ED19E9E1AC3033F /* [CP] Check Pods Manifest.lock */,
+				0C8930C42876B51C004CD501 /* Sources */,
+				0C8930C52876B51C004CD501 /* Frameworks */,
+				0C8930C62876B51C004CD501 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasswordAutoFill;
+			productName = PasswordAutoFill;
+			productReference = 0C8930C82876B51C004CD501 /* PasswordAutoFill.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D0D6C7FA2860ABCB006A3A5B /* Database Final Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0D6C80F2860ABCD006A3A5B /* Build configuration list for PBXNativeTarget "Database Final Project" */;
+			buildPhases = (
+				6A22E0F454E4356CDE3E1C5B /* [CP] Check Pods Manifest.lock */,
+				D0D6C7F72860ABCB006A3A5B /* Sources */,
+				D0D6C7F82860ABCB006A3A5B /* Frameworks */,
+				D0D6C7F92860ABCB006A3A5B /* Resources */,
+				E92F10361461CFE6849856C6 /* [CP] Embed Pods Frameworks */,
+				0C8930D62876B51D004CD501 /* Embed Foundation Extensions */,
+				D0C2B78A28F5531C004658C9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C8930D42876B51D004CD501 /* PBXTargetDependency */,
+			);
+			name = "Database Final Project";
+			productName = CmoreKeyDemo;
+			productReference = D0D6C7FB2860ABCB006A3A5B /* Database Final Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0D6C7F32860ABCA006A3A5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					0C8930C72876B51C004CD501 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					D0D6C7FA2860ABCB006A3A5B = {
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
+					};
+				};
+			};
+			buildConfigurationList = D0D6C7F62860ABCA006A3A5B /* Build configuration list for PBXProject "Database Final Project" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hant",
+			);
+			mainGroup = D0D6C7F22860ABCA006A3A5B;
+			productRefGroup = D0D6C7FC2860ABCB006A3A5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0D6C7FA2860ABCB006A3A5B /* Database Final Project */,
+				0C8930C72876B51C004CD501 /* PasswordAutoFill */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C8930C62876B51C004CD501 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D034ECC428A89DD5006856FB /* Localizable.strings in Resources */,
+				D03880702901285700C69BD8 /* AutoFillTVC.xib in Resources */,
+				0C0467A028F816180046BBB6 /* NewAddViewController.xib in Resources */,
+				0C315E782897E81900035448 /* AutoFillViewController.xib in Resources */,
+				D083F3BE2943571D00E4A9F8 /* CheckBoxButtonView.xib in Resources */,
+				0C0467A528F8176A0046BBB6 /* NewGenerateRandomPasswordViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D6C7F92860ABCB006A3A5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0259925286E97FE00882615 /* SettingsMainViewController.xib in Resources */,
+				0CA1921C29029BE20063E530 /* BackupTableViewCell.xib in Resources */,
+				D0259921286E97ED00882615 /* NotesMainViewController.xib in Resources */,
+				D034ECC028A89D7B006856FB /* Localizable.strings in Resources */,
+				D0259929286EAD3100882615 /* PasswordMainTableViewCell.xib in Resources */,
+				D034ECD728AFF006006856FB /* GenerateRandomPasswordViewController.xib in Resources */,
+				D034ECDD28B0AF52006856FB /* InfoPlist.strings in Resources */,
+				D0259932287175B000882615 /* NotesMainTableViewCell.xib in Resources */,
+				0CD050E428B4E11200A82828 /* EditPasswordViewController.xib in Resources */,
+				D0D6C80B2860ABCD006A3A5B /* LaunchScreen.storyboard in Resources */,
+				0CA1920F290142C10063E530 /* CKBackupRestoreViewController.xib in Resources */,
+				D0F61C6429A8FD7800ED0FBA /* NavigationBarView.xib in Resources */,
+				8F87D7EE2B2D86E400CF417E /* RegisterViewController.xib in Resources */,
+				D0D6C8182860AC14006A3A5B /* MainViewController.xib in Resources */,
+				D025991D286E97D600882615 /* PasswordMainViewController.xib in Resources */,
+				D083F3BD2943571D00E4A9F8 /* CheckBoxButtonView.xib in Resources */,
+				0C42418F28BDFACB00D055A2 /* SearchTableViewCell.xib in Resources */,
+				8F87D7FA2B30717D00CF417E /* ResetPasswordViewController.xib in Resources */,
+				0CA1921429014A830063E530 /* BackupHeaderTableViewCell.xib in Resources */,
+				0C42418A28BDF8F200D055A2 /* SearchViewController.xib in Resources */,
+				8F87D7F62B2E007200CF417E /* GoogleService-Info.plist in Resources */,
+				0CA1921829029BAB0063E530 /* BackupOperationTableViewCell.xib in Resources */,
+				0CF9AAA528AA12BD00F7888D /* AddNotesViewController.xib in Resources */,
+				0CD050E828B565E500A82828 /* EditNotesViewController.xib in Resources */,
+				D0D6C8082860ABCD006A3A5B /* Assets.xcassets in Resources */,
+				0CF9AAA128AA12A600F7888D /* AddPasswordViewController.xib in Resources */,
+				D05A4599287180FB007492A5 /* SettingsMainTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A22E0F454E4356CDE3E1C5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Database Final Project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87187DD36ED19E9E1AC3033F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PasswordAutoFill-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0C2B78A28F5531C004658C9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+		E92F10361461CFE6849856C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Database Final Project/Pods-Database Final Project-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Database Final Project/Pods-Database Final Project-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Database Final Project/Pods-Database Final Project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C8930C42876B51C004CD501 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CF47FC228BFC81700980C6E /* SingletonPatternOfPasswordAndNotes.swift in Sources */,
+				D026BBA728E9895500BAA749 /* CryptoManager.swift in Sources */,
+				0C04679F28F816180046BBB6 /* NewAddViewController.swift in Sources */,
+				D00E7599298D5EDB00FE1C5E /* iCloudEntity.swift in Sources */,
+				0C8BE1542934C3F000B78EB2 /* PasscodeTextFieldImplementation.swift in Sources */,
+				0C315E792897E81900035448 /* AutoFillViewController.swift in Sources */,
+				D0FAC3DB2931FA9000611C5C /* PasscodeTextField.swift in Sources */,
+				D036FF0728E8A30400E6D990 /* Localizables.swift in Sources */,
+				D09F12902910D48C004D38B9 /* CustomPasswordLockTextField.swift in Sources */,
+				0C0467A428F8176A0046BBB6 /* NewGenerateRandomPasswordViewController.swift in Sources */,
+				D036FF1428E9442800E6D990 /* Notification+Extensions.swift in Sources */,
+				D031F57D2977D58800116BD5 /* UIColor+Extensions.swift in Sources */,
+				D00E75A2298E7A3500FE1C5E /* UIImage+Extensions.swift in Sources */,
+				D020A4F429508DB500756A9E /* SFSymbols.swift in Sources */,
+				0C34665C28C12C80001E8630 /* Alert.swift in Sources */,
+				D0C2B78B28F570DD004658C9 /* Data+Extensions.swift in Sources */,
+				7438053A28BF6521009CD8AF /* NotesModel.swift in Sources */,
+				D09F128F2910D405004D38B9 /* CustomTextField.swift in Sources */,
+				7438053828BF64B2009CD8AF /* LocalDatabase.swift in Sources */,
+				D099A2C328F529B2000D90BD /* String+Extensions.swift in Sources */,
+				D036FF1528E9442B00E6D990 /* Encodable+Extensions.swift in Sources */,
+				D00E75A92993907900FE1C5E /* UIAlertController+Extensions.swift in Sources */,
+				D038806F2901285700C69BD8 /* AutoFillTVC.swift in Sources */,
+				D036FF1328E9442400E6D990 /* UIViewController+Extensions.swift in Sources */,
+				D08BA15E29BC40E3007EEFDD /* AppDefine.swift in Sources */,
+				D0D92C6E2955752E000E52B8 /* UserPreferences.swift in Sources */,
+				D083F3BC2943571D00E4A9F8 /* CheckBoxButtonView.swift in Sources */,
+				D036FF1228E9442100E6D990 /* UIView+Extensions.swift in Sources */,
+				0C315E882897E82B00035448 /* PublicClass.swift in Sources */,
+				7438053928BF651E009CD8AF /* PasswordModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D6C7F72860ABCB006A3A5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D036FF0D28E9439900E6D990 /* UIViewController+Extensions.swift in Sources */,
+				8F87D7ED2B2D86E400CF417E /* RegisterViewController.swift in Sources */,
+				8F87D7F92B30717D00CF417E /* ResetPasswordViewController.swift in Sources */,
+				0CA1921329014A830063E530 /* BackupHeaderTableViewCell.swift in Sources */,
+				D0D6C8172860AC14006A3A5B /* MainViewController.swift in Sources */,
+				D034ECD828AFF006006856FB /* GenerateRandomPasswordViewController.swift in Sources */,
+				D025992C286EC56200882615 /* PasswordModel.swift in Sources */,
+				0C42418928BDF8F200D055A2 /* SearchViewController.swift in Sources */,
+				D0D6C81A2860AC28006A3A5B /* BaseViewController.swift in Sources */,
+				D0D6C7FF2860ABCB006A3A5B /* AppDelegate.swift in Sources */,
+				D099A2C528F52E5B000D90BD /* Data+Extensions.swift in Sources */,
+				D099ECAA28F9987D006FFF9C /* ChromeExtensionDataInfo.swift in Sources */,
+				D0499D4228B9CE8800EEDA28 /* main.swift in Sources */,
+				D0FAC3DA2931FA9000611C5C /* PasscodeTextField.swift in Sources */,
+				0C8BE1532934C3F000B78EB2 /* PasscodeTextFieldImplementation.swift in Sources */,
+				D038806B28FFA41300C69BD8 /* UIColor+Extensions.swift in Sources */,
+				D0D2A5E728DD9CFE0010C791 /* FirebaseRealtimeDatabase.swift in Sources */,
+				7438052028B491D5009CD8AF /* LocalDatabase.swift in Sources */,
+				D036FF1128E943D800E6D990 /* Encodable+Extensions.swift in Sources */,
+				D036FF0B28E9438200E6D990 /* UIView+Extensions.swift in Sources */,
+				D0A5FB73286613BD00A59BF0 /* UserPreferences.swift in Sources */,
+				D0A0B27B29557FE400639A91 /* AppDefine.swift in Sources */,
+				D0259928286EAD3100882615 /* PasswordMainTableViewCell.swift in Sources */,
+				D0D6C8012860ABCB006A3A5B /* SceneDelegate.swift in Sources */,
+				0CA1921B29029BE20063E530 /* BackupTableViewCell.swift in Sources */,
+				D05A459F28719C56007492A5 /* CommandBase.swift in Sources */,
+				D09F128E2910D405004D38B9 /* CustomTextField.swift in Sources */,
+				0CA1921729029BAB0063E530 /* BackupOperationTableViewCell.swift in Sources */,
+				0CD050E328B4E11200A82828 /* EditPasswordViewController.swift in Sources */,
+				D020A4F329508C6300756A9E /* SFSymbols.swift in Sources */,
+				D0A61915290CEE380074AE58 /* UIApplication+Extensions.swift in Sources */,
+				0CF9AAA028AA12A600F7888D /* AddPasswordViewController.swift in Sources */,
+				0CA4CF7E28B382790076DFE5 /* SingletonPatternOfPasswordAndNotes.swift in Sources */,
+				D025991C286E97D600882615 /* PasswordMainViewController.swift in Sources */,
+				0CF9AAA428AA12BD00F7888D /* AddNotesViewController.swift in Sources */,
+				D036FF0F28E943B800E6D990 /* Notification+Extensions.swift in Sources */,
+				74C5D4082906AE2A00E11388 /* Date+Extensions.swift in Sources */,
+				0C42418E28BDFACB00D055A2 /* SearchTableViewCell.swift in Sources */,
+				D083F3BB2943571D00E4A9F8 /* CheckBoxButtonView.swift in Sources */,
+				D034ECE428B0CD40006856FB /* SpinningCircleView.swift in Sources */,
+				D00E75A1298E7A3500FE1C5E /* UIImage+Extensions.swift in Sources */,
+				D0259920286E97ED00882615 /* NotesMainViewController.swift in Sources */,
+				D0259931287175B000882615 /* NotesMainTableViewCell.swift in Sources */,
+				D034ECC828A8A60B006856FB /* Localizables.swift in Sources */,
+				D05A4598287180FB007492A5 /* SettingsMainTableViewCell.swift in Sources */,
+				D099A2C228F528BB000D90BD /* String+Extensions.swift in Sources */,
+				8F87D7FC2B30BB7100CF417E /* AuthenticationManager.swift in Sources */,
+				D026BBA528E9857B00BAA749 /* RealtimeDatabaseUpload.swift in Sources */,
+				D0157C8D28F7DA3300A3C48B /* CloudKitDatabase.swift in Sources */,
+				D0A5FB6F2866100900A59BF0 /* Alert.swift in Sources */,
+				D00E75A82993907900FE1C5E /* UIAlertController+Extensions.swift in Sources */,
+				D0259924286E97FE00882615 /* SettingsMainViewController.swift in Sources */,
+				D03D4DBD2909671C00B48679 /* UIBarButtonItem+Extensions.swift in Sources */,
+				D00E7598298D5EB800FE1C5E /* iCloudEntity.swift in Sources */,
+				D09F128C2910C07B004D38B9 /* CustomPasswordLockTextField.swift in Sources */,
+				D05A459528717A9D007492A5 /* NotesModel.swift in Sources */,
+				0CD050E728B565E500A82828 /* EditNotesViewController.swift in Sources */,
+				0CA1920E290142C10063E530 /* CKBackupRestoreViewController.swift in Sources */,
+				D0F61C6229A8FD6C00ED0FBA /* NavigationBarView.swift in Sources */,
+				D00E75A4298E933200FE1C5E /* UserNotifications.swift in Sources */,
+				D007F12C28C255C10059AFA2 /* CryptoManager.swift in Sources */,
+				D0F61C6729A9B35400ED0FBA /* StatusBarView.swift in Sources */,
+				D0499D4128B9CE8800EEDA28 /* ScreenIdleTimerUIApplication.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C8930D42876B51D004CD501 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C8930C72876B51C004CD501 /* PasswordAutoFill */;
+			targetProxy = 0C8930D32876B51D004CD501 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D034ECC228A89D7B006856FB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D034ECC128A89D7B006856FB /* en */,
+				D034ECC328A89D7E006856FB /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		D034ECDF28B0AF52006856FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D034ECDE28B0AF52006856FB /* en */,
+				D034ECE028B0AF54006856FB /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D0D6C8092860ABCD006A3A5B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0D6C80A2860ABCD006A3A5B /* Base */,
+				D034ECBC28A89D22006856FB /* zh-Hant */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C8930D72876B51D004CD501 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 103A093A8344240D212232C7 /* Pods-PasswordAutoFill.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PasswordAutoFill/PasswordAutoFill.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = S8FBP4YLUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PasswordAutoFill/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PasswordAutoFill;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.final.project.passwordautofill;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C8930D82876B51D004CD501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F125E1EBF3A89026F680FFA /* Pods-PasswordAutoFill.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PasswordAutoFill/PasswordAutoFill.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = S8FBP4YLUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PasswordAutoFill/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PasswordAutoFill;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.final.project.passwordautofill;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D0D6C80D2860ABCD006A3A5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D0D6C80E2860ABCD006A3A5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0D6C8102860ABCD006A3A5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36F2A6CFBA93FA1D5DAF0B87 /* Pods-Database Final Project.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Database Final Project/Database Final Project.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = S8FBP4YLUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Database Final Project/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Database Final Project";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scan QrCode to get Messages into the application";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "使用生物辨識來解鎖 App";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.final.project;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D0D6C8112860ABCD006A3A5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C86599C0F0272DC7DE3957A9 /* Pods-Database Final Project.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Database Final Project/Database Final Project.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S8FBP4YLUA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Database Final Project/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Database Final Project";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scan QrCode to get Messages into the application";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "使用生物辨識來解鎖 App";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.final.project;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C8930D92876B51D004CD501 /* Build configuration list for PBXNativeTarget "PasswordAutoFill" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C8930D72876B51D004CD501 /* Debug */,
+				0C8930D82876B51D004CD501 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0D6C7F62860ABCA006A3A5B /* Build configuration list for PBXProject "Database Final Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0D6C80D2860ABCD006A3A5B /* Debug */,
+				D0D6C80E2860ABCD006A3A5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0D6C80F2860ABCD006A3A5B /* Build configuration list for PBXNativeTarget "Database Final Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0D6C8102860ABCD006A3A5B /* Debug */,
+				D0D6C8112860ABCD006A3A5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0D6C7F32860ABCA006A3A5B /* Project object */;
+}
