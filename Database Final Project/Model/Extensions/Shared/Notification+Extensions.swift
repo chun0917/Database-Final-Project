@@ -10,7 +10,7 @@ extension Notification.Name {
     
     static let statusAutoFill = Notification.Name("statusAutoFill")
     
-    static let kApplicationDidIdle10MinsNotification = Notification.Name("kApplicationDidIdle10MinsNotification")
+    static let kApplicationDidIdle5MinsNotification = Notification.Name("kApplicationDidIdle5MinsNotification")
     
     static let Extension_AccountIsEmptyString = Notification.Name("Extension_AccountIsEmptyString")
     

@@ -53,6 +53,6 @@ class ScreenIdleTimerUIApplication: UIApplication {
     }
     
     @objc func idleTimerPostNotification() {
-        NotificationCenter.default.post(name: .kApplicationDidIdle10MinsNotification, object: nil)
+        NotificationCenter.default.post(name: .kApplicationDidIdle5MinsNotification, object: nil)
     }
 }

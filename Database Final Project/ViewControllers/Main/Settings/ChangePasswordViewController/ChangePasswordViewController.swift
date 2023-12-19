@@ -8,12 +8,13 @@
 import UIKit
 import FMDB
 
-class ResetPasswordViewController: BaseViewController {
+class ChangePasswordViewController: BaseViewController {
     @IBOutlet weak var vStatusBar: StatusBarView!
     @IBOutlet weak var vNavigationBar: NavigationBarView!
     @IBOutlet weak var originPasswordTextField: CustomPasswordLockTextField!
     @IBOutlet weak var newPasswordTextField: CustomPasswordLockTextField!
     @IBOutlet weak var confirmNewPasswordTextField: CustomPasswordLockTextField!
+    @IBOutlet var requiredLabels: [UILabel]!
     @IBOutlet weak var originPasswordCountLabel: UILabel!
     @IBOutlet weak var newPasswordCountLabel: UILabel!
     @IBOutlet weak var confirmNewPasswordCountLabel: UILabel!
@@ -33,7 +34,7 @@ class ResetPasswordViewController: BaseViewController {
     func setupUI(){
         setupNavigationBarView()
         setupTextFields()
-        setupCountLabel()
+        setupLabels()
     }
     
     /// 判斷是否成功連線至資料庫
@@ -58,7 +59,7 @@ class ResetPasswordViewController: BaseViewController {
                 let result: FMResultSet = try database.executeQuery(query, values: [UserPreferences.shared.userID])
                 while result.next() {
                     if (originPassword != result.string(forColumn: "password")!){
-                        Alert.showToastWith(message: "原密碼錯誤！", vc: self, during: .short)
+                        Alert.showToastWith(message: translate(.Origin_password_is_incorrect), vc: self, during: .short)
                     }
                     else {
                         isOriginPasswordCorrect = true
@@ -104,8 +105,11 @@ class ResetPasswordViewController: BaseViewController {
         confirmNewPasswordTextField.delegate = self
     }
     
-    /// 設定字數統計 Label 樣式
-    private func setupCountLabel() {
+    /// 設定 Label 樣式
+    private func setupLabels() {
+        requiredLabels[0].text = translate(.Required)
+        requiredLabels[1].text = translate(.Required)
+        requiredLabels[2].text = translate(.Required)
         originPasswordCountLabel.text = "\(0)/50"
         newPasswordCountLabel.text = "\(0)/50"
         confirmNewPasswordCountLabel.text = "\(0)/50"
@@ -181,7 +185,7 @@ class ResetPasswordViewController: BaseViewController {
 }
 // MARK: - NavigationBarViewDelegate
 
-extension ResetPasswordViewController: NavigationBarViewDelegate {
+extension ChangePasswordViewController: NavigationBarViewDelegate {
     
     func btnBackClicked() {
         backButtonAction()
@@ -193,7 +197,7 @@ extension ResetPasswordViewController: NavigationBarViewDelegate {
 }
 // MARK: - UITextFieldDelegate
 
-extension ResetPasswordViewController: UITextFieldDelegate {
+extension ChangePasswordViewController: UITextFieldDelegate {
     
     func textField(_ textField: UITextField,
                    shouldChangeCharactersIn range: NSRange,

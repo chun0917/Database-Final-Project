@@ -23,51 +23,12 @@ struct AppDefine {
         return Bundle.main.infoDictionary?["CFBundleName"] as! String
     }
     
-    // MARK: - enum MarketingPage
-    
-    enum MarketingPage: Int, CaseIterable {
-        case pageOne = 0, pageTwo, pageThree
-        
-        /// 需使用 `UIImage(named:)` 來取得圖片
-        var imageName: String {
-            switch self {
-            case .pageOne:
-                return "init_cert_intro_1"
-            case .pageTwo:
-                return "init_cert_intro_2"
-            case .pageThree:
-                return "init_cert_intro_3"
-            }
-        }
-        
-        var title: String {
-            switch self {
-            case .pageOne:
-                return "高強度密碼"
-            case .pageTwo:
-                return "去中心化的儲存帳密"
-            case .pageThree:
-                return "自動填入服務"
-            }
-        }
-        
-        var subTitle: String {
-            switch self {
-            case .pageOne:
-                return "為避免維持一貫簡單的密碼，請善用高強度密碼產生器，此自動產生各式大小寫字母、數字、特殊符號的隨機密碼，建立強大、安全與隨機的高強度密碼帶給您終極的防護。"
-            case .pageTwo:
-                return "請在「設定」開啟「自動備份」連結您的 Apple ID 帳號。\n以您的手機作為儲存中心，您儲存任何網址、帳號、密碼與加密貨幣錢包位置及註記詞。\n請善用儲存帳密備份機制，除了你自己，其他人無法解密，我們並無保留您的任何資料。\n或是您可手寫紙本紀錄存放實體保險箱內作為備份。"
-            case .pageThree:
-                return "請在「設定」開啟「自動填入服務」功能。\n提供瀏覽器與 App 的使用者名稱與密碼自動填入，有助於為您節省時間並防止輸入錯誤。"
-            }
-        }
-    }
     
     // MARK: - typelias SettingsType、enum Settings
 
     typealias SettingsType = (imageName: SFSymbols, title: String)
     enum Settings: Int, CaseIterable {
-        case autoFill = 0, iCloudBackup, resetPassword,signOut
+        case autoFill = 0, iCloudBackup, changePassword,signOut
 
         var value: SettingsType {
             switch self {
@@ -75,40 +36,10 @@ struct AppDefine {
                 return (.settings, translate(.Enable_AutoFill_Services))
             case .iCloudBackup:
                 return (.icloud, translate(.BackupRestore))
-            case .resetPassword:
+            case .changePassword:
                 return (.person, translate(.Change_Password))
             case .signOut:
                 return (.rightChevronWithBackground, translate(.Sign_Out))
-            }
-        }
-    }
-    
-    // MARK: - enum Store
-    
-    /// enum 商店頁面分類
-    enum Store: Int, CaseIterable {
-        case consumable = 0, options
-    }
-    
-    /// enum 商店選項
-    enum StoreOptions: Int, CaseIterable {
-        case showManageSubscriptions = 0, getAllTransaction
-        
-        var title: String {
-            switch self {
-            case .showManageSubscriptions:
-                return "查看 App Store 訂閱狀態"
-            case .getAllTransaction:
-                return "取得消耗性產品的最新交易紀錄"
-            }
-        }
-        
-        var buttonTitle: String {
-            switch self {
-            case .showManageSubscriptions:
-                return "查看"
-            case .getAllTransaction:
-                return "讀取"
             }
         }
     }
@@ -153,9 +84,9 @@ struct AppDefine {
         #endif
         
         #if DEBUG
-        static var title: [String] = ["15 分鐘", "30 分鐘", "一小時", "兩小時", "三小時", "永不"]
+        static var title: [String] = [translate(.minutes15), translate(.minutes30), translate(.hour1), translate(.hours2), translate(.hours3), translate(.never)]
         #else
-        static var title: [String] = ["每天", "每三天", "每週", "每兩週", "每月", "永不"]
+        static var title: [String] = [translate(.everyday), translate(.every3days), translate(.everyweek), translate(.every2weeks), translate(.everymonth), translate(.never)]
         #endif
         
         var interval: Int {

@@ -17,16 +17,12 @@ class UserPreferences {
     }
     
     enum UserPreference: String {
-        
+        // MARK: User Information
         case email
         
         case phone
         
         case userID
-        
-        
-        // MARK: Initial Flow
-        
         
         // MARK: General
         /// 是否登入
@@ -34,7 +30,6 @@ class UserPreferences {
         
         /// 裝置的 App AutoFill 是否開啟
         case chooseAppToAutoFill
-        
         
         /// 螢幕閒置的開始時間
         case idleStartTime
@@ -68,8 +63,7 @@ class UserPreferences {
     }
     
     // MARK: - Variables
-    
-    // Apex Server
+    // User Information
     var email: String {
         get { return userPreferences.string(forKey: UserPreference.email.rawValue) ?? "" }
         set { userPreferences.set(newValue, forKey: UserPreference.email.rawValue) }

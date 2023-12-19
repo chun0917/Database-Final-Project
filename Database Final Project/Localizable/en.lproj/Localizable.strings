@@ -23,7 +23,6 @@
 "Continue" = "Continue";
 "Done" = "Done";
 "Back" = "Back";
-"Subscription" = "Subscription";
 
 // MARK: - UITabBar Title
 
@@ -38,71 +37,35 @@
 "Details" = "Details";
 "The selected data will be deleted soon, and cannot be recovered after deletion. Please confirm whether to continue?" = "The selected data will be deleted soon, and cannot be recovered after deletion. Please confirm whether to continue?";
 
-// MARK: - Local Authentication
-
-"Enable Biometrics Authentication" = "Enable Biometrics Authentication";
-"Enter Passcode" = "Enter Passcode";
-
 // MARK: - Initial Flow
-// MARK: RegisterViewController
-
-"Email" = "Email";
-"Phone" = "Phone";
-"Confirm Password"  = "Confirm Password";
-"Cancel Register" = "Cancel Register";
 
 // MARK: MainViewController
 
 "Login" = "Login";
 "Forget Password?" = "Forget Password?";
 "Welcome to use the APP!" = "Welcome to use the APP!";
+"Email and Password cannot be empty!" = "Email and Password cannot be empty!";
+"Please input valid Email!" = "Please input valid Email!";
+"Login Success" = "Login Success";
+"Email isn't exist or incorrect password!" = "Email isn't exist or incorrect password!";
+"Get verify code" = "Get verify code";
+"Input phone number" = "Input phone number";
+"Verify code" = "Verify code";
+"Input verify code" = "Input verify code";
+"Verify Success! Reset your password to 000000" = "Verify Success! Reset your password to 000000";
+"Phone number isn't exist" = "Phone number isn't exist";
+"Verify code is incorrect, please try again" = "Verify code is incorrect, please try again";
+// MARK: RegisterViewController
 
-// MARK: ChooseCredentialViewController
-
-"Please choose the way to import the identity certificate" = "Please choose the way to import the identity certificate";
-"Choose Credential" = "Choose Credential";
-"Scan Credential" = "Scan Credential";
-"Verifying credentials..." = "Verifying credentials...";
-"This card is bound by other device, if continue it will make bound device unbind." = "This card is bound by other device, if continue it will make bound device unbind.";
-
-// MARK: CreatePasswordLockViewController
-
-"Create" = "Create";
-"Create Password Lock" = "Create Password Lock";
-"Set password lock less than 6 digits" = "Set password lock less than 6 digits";
-"Confirm password lock is less than 6 digits" = "Confirm password lock is less than 6 digits";
-"Please enter the password lock you want to set" = "Please enter the password lock you want to set";
-"Confirm the password lock to be set" = "Confirm the password lock to be set";
-"Inconsistent password entered twice" = "Inconsistent password entered twice";
-
-// MARK: HaveCredentialViewController
-
-"First Use" = "First Use";
-"Already have credentials" = "Already have credentials";
-"Already have credentials?" = "Already have credentials?";
-"If you have already used this product or the unit has issued a certificate, please select the existing identity certificate process" = "If you have already used this product or the unit has issued a certificate, please select the existing identity certificate process";
-
-// MARK: WelcomeProductViewController
-
-"Welcome to use this product" = "Welcome to use this product";
-"The next step will be the initialization process: 1. Set a 6-digit passcode 2. Create an identity certificate\n\nPlease click the button to start the initialization." = "The next step will be the initialization process:\n\n1. Set a 6-digit passcode\n2. Create an identity certificate\n\nPlease click the button to start the initialization.";
-"Start initialization" = "Start initialization";
-
-// MARK: CredentialViewController
-
-"Creating" = "Creating";
-"Importing" = "Importing";
-"Credential are being created" = "Credential are being created";
-"Device binding" = "Device binding";
-"This file is not a certificate, please select again." = "This file is not a certificate, please select again.";
-"The credential parsing failed, please confirm the credential is correct." = "The credential parsing failed, please confirm the credential is correct.";
-
-// MARK: StoreCredentialViewController
-
-"Keeping Credentials" = "Keeping Credentials";
-"Note, please take good care of the identity certificate, since it is stored in a decentralized manner, any information cannot be recovered after it is lost." = "Note, please take good care of the identity certificate, since it is stored in a decentralized manner, any information cannot be recovered after it is lost.";
-"Save as" = "Save as";
-"Other site store" = "Other site store";
+"Email" = "Email";
+"Phone" = "Phone";
+"Confirm Password"  = "Confirm Password";
+"Cancel Register" = "Cancel Register";
+"Please input valid Email or Phone!" = "Please input valid Email or Phone!";
+"Password don't match!" = "Password don't match!";
+"Email is already registered" = "Email is already registered";
+"Phone is already registered" = "Phone is already registered";
+"Register success!" = "Register success!";
 
 // MARK: - Password
 
@@ -150,62 +113,21 @@
 // MARK: SettingsMainViewController
 
 "Enable AutoFill Services" = "Enable AutoFill Services";
-"Biometric Lock (Touch ID / Face ID)" = "Biometric Lock (%@)";
-"The user has not given permission for the app to access the biometrics" = "The user has not given permission for the app to access the biometrics";
-"Please go to `Settings -> Face ID & Password -> Other Apps` to enable App" = "Please go to「Settings -> Face ID & Password -> Other Apps」to enable App";
-"Please Set Face ID in「Settings -> Face ID and Password」first" = "Please Set Face ID in「Settings -> Face ID and Password」first";
-"Go to Settings" = "Settings";
-"App Store" = "App Store";
+"Go to Settings" = "Go to Settings";
 "Info" = "Info";
 "Sign Out" = "Sign Out";
 "Change Password" = "Change Password";
-"For security purposes, a passcode is required to reset." = "For security purposes, a passcode is required to reset.";
-"All data in the App will be cleared. Do you want to continue?" = "All data in the App will be cleared. Do you want to continue?";
 "iCloud Backup" = "iCloud Backup";
 "Please select AutoFill Service" = "Please select AutoFill Service";
 "AutoFill service is enabled" = "AutoFill service is enabled";
-"Manage Credentials" = "Manage Credentials";
+"Sign out success!" = "Sign out success!";
 
-// MARK: - Add
-
-"Add" = "Add";
-"Cancel Add" = "Cancel Add";
-"The currently entered data has not been saved. Do you want to leave this screen?" = "The currently entered data has not been saved. Do you want to leave this screen？";
-"Please make sure all required fields are entered" = "Please make sure all required fields are entered";
-"The trial period has expired, please subscribe if you want to use this feature." = "The trial period has expired, please subscribe if you want to use this feature.";
-
-// MARK: - Edit
-
-"Cancel Edit" = "Cancel Edit";
-"Copy Succeed!" = "Copy Succeed!";
-"Information has been copied to the scrapbook" = "Information has been copied to the scrapbook";
-
-// MARK: - Search
-
-"Search" = "Search";
-
-// MARK: - Lock App
-
-// MARK: LockAppViewController
-
-"PassCode" = "PassCode";
-"Sign in with biometrics" = "Sign in with biometrics";
-"Reset" = "Reset";
-"Forgot Passcode" = "Forgot Passcode";
-"Login" = "Login";
-"Please enter your password or use biometrics to unlock" = "Please enter your password or use biometrics to unlock";
-"The access code has been entered incorrectly." = "The access code has been entered incorrectly.";
-"Your device is not connected to the network, please confirm the network status, reconnect and try again." = "Your device is not connected to the network, please confirm the network status, reconnect and try again.";
-"Since the passcard bound to this device is already logged in on another device, the current device has been logged out." = "Since the passcard bound to this device is already logged in on another device, the current device has been logged out.";
-"Due to security considerations, if you forget the passcode, you can only reset the passcode through your identity certificate. Please make sure you have someone with you before proceeding. This action will not erase your stored data." = "Due to security considerations, if you forget the passcode, you can only reset the passcode through your identity certificate. Please make sure you have someone with you before proceeding. \n\nThis action will not erase your stored data.";
-"In order to provide a better service experience, the platform is undergoing upgrade and maintenance, please come back later." = "In order to provide a better service experience, the platform is undergoing upgrade and maintenance, please come back later.";
-
-// MARK: LockTenMinutesViewController
-
-"Login is locked" = "Login is locked";
-"The access code has been entered incorrectly three times. To protect the security of your data, the login will be locked for ten minutes." = "The access code has been entered incorrectly three times. To protect the security of your data, the login will be locked for ten minutes.";
-
-// MARK: - iCloud Backup
+// MARK: ChangePasswordViewController
+"Input Origin Password" = "Input Origin Password";
+"Input New Password" = "Input New Password";
+"Confirm New Password" = "Confirm New Password";
+"Change Password Succeed!" = "Change Password Succeed!";
+"Origin Password is incorrect!" = "Origin Password is incorrect!";
 
 // MARK: CKBackupRestoreViewController
 
@@ -239,35 +161,39 @@
 "Whether to go to the settings to open" = "Whether to go to the settings to open";
 "Backup data on iCloud has been deleted" = "Backup data on iCloud has been deleted";
 "There is currently no backup data of App on iCloud. Please execute「Backup to iCloud」first, and then perform this operation." = "There is currently no backup data of App on iCloud. Please execute「Backup to iCloud」first, and then perform this operation.";
+"15 Minutes" = "15 Minutes";
+"30 Minutes" = "30 Minutes";
+"1 Hour" = "1 Hour";
+"2 Hours" = "2 Hours";
+"3 Hours" = "3 Hours";
+"Never" = "Never";
+"Every Day" = "Every Day";
+"Every 3 Days" = "Every 3 Days";
+"Every Week" = "Every Week";
+"Every 2 Weeks" = "Every 2 Weeks";
+"Every Month" = "Every Month";
 
-// MARK: - Chrome Extension
-"Input Origin Password" = "Input Origin Password";
-"Input New Password" = "Input New Password";
-"Confirm New Password" = "Confirm New Password";
-"Change Password Succeed!" = "Change Password Succeed!";
-// MARK: ChromeExtensionAutoFillViewController
+// MARK: - Add
 
-"The data has been sent to the browser App extension function, please confirm on the function page" = "The data has been sent to the browser App extension function, please confirm on the function page";
+"Add" = "Add";
+"Cancel Add" = "Cancel Add";
+"The currently entered data has not been saved. Do you want to leave this screen?" = "The currently entered data has not been saved. Do you want to leave this screen？";
+"Please make sure all required fields are entered" = "Please make sure all required fields are entered";
 
-// MARK: ChromeExtensionOpenQrCodeViewController
+// MARK: - Edit
 
-"Scan the App browser suite for automatic data filling." = "Scan the App browser suite for automatic data filling.";
-"do not show again" = "do not show again";
-"open the scanner" = "open the scanner";
+"Cancel Edit" = "Cancel Edit";
+"Copy Succeed!" = "Copy Succeed!";
+"Information has been copied to the scrapbook" = "Information has been copied to the scrapbook";
 
-// MARK: ScanQRCodeViewController
+// MARK: - Search
 
-"The user has not given permission for the app to access the camera" = "The user has not given permission for the app to access the camera";
+"Search" = "Search";
 
-// MARK: - App Extension 的
-
-// MARK: InputPasswordVC
-
-"Extension_PassCode" = "PassCode";
-"Extension_Login" = "Login";
-"Extension_The entered passwords do not match" = "The entered passwords do not match";
-"Extension_Save" = "Save";
+// MARK: - App Extension
 
 // MARK: AutoFillViewController
 
+"Extension_Save" = "Save";
+"Please login first" = "Please login first";
 "Extension_Add Account" = "➕ Add Account";

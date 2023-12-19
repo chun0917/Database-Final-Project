@@ -69,7 +69,7 @@ class AutoFillViewController: ASCredentialProviderViewController {
     func checkIsSignIn(){
         if (UserPreferences.shared.isSignIn == false) {
             addBackgroundView()
-            Alert.showAlertWithError(message: "請先登入！", vc: self, confirmTitle: translate(.Confirm)) {
+            Alert.showAlertWithError(message: translate(.Please_login_first), vc: self, confirmTitle: translate(.Confirm)) {
                 self.extensionContext.cancelRequest(withError: NSError(domain: ASExtensionErrorDomain,
                                                                        code: ASExtensionError.userCanceled.rawValue))
             }

@@ -98,39 +98,39 @@ class CKBackupRestoreViewController: BaseViewController {
         #if DEBUG
         case 15 * 60:
             // 15 分鐘
-            automaticBackupTitle = "15 分鐘"
+            automaticBackupTitle = translate(.minutes15)
         case 30 * 60:
             // 30 分鐘
-            automaticBackupTitle = "30 分鐘"
+            automaticBackupTitle = translate(.minutes30)
         case 1 * 60 * 60:
             // 一小時
-            automaticBackupTitle = "一小時"
+            automaticBackupTitle = translate(.hour1)
         case 2 * 60 * 60:
             // 兩小時
-            automaticBackupTitle = "兩小時"
+            automaticBackupTitle = translate(.hours2)
         case 3 * 60 * 60:
             // 三小時
-            automaticBackupTitle = "三小時"
+            automaticBackupTitle = translate(.hours3)
         #else
         case 24 * 60 * 60:
             // 每天
-            automaticBackupTitle = "每天"
+            automaticBackupTitle = translate(.everyday)
         case 24 * 3 * 60 * 60:
             // 每三天
-            automaticBackupTitle = "每三天"
+            automaticBackupTitle = translate(.every3days)
         case 24 * 7 * 60 * 60:
             // 每週
-            automaticBackupTitle = "每週"
+            automaticBackupTitle = translate(.everyweek)
         case 24 * 14 * 60 * 60:
             // 每兩週
-            automaticBackupTitle = "每兩週"
+            automaticBackupTitle = translate(.every2weeks)
         case 24 * 30 * 60 * 60:
             // 每月
-            automaticBackupTitle = "每月"
+            automaticBackupTitle = translate(.everymonth)
         #endif
         case 0:
             // 永不
-            automaticBackupTitle = "永不"
+            automaticBackupTitle = translate(.never)
         default:
             automaticBackupTitle = translate(.Close)
         }

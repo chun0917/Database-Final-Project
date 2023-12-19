@@ -25,7 +25,6 @@ enum LocalizableStrings: String {
     case Continue = "Continue"
     case Done = "Done"
     case Back = "Back"
-    case Subscription = "Subscription"
     
     // MARK: - UITabBar Title
     
@@ -44,17 +43,34 @@ enum LocalizableStrings: String {
     
     // MARK: - Initial Flow
     
+    // MARK: LoginViewController
+    
+    case Login = "Login"
+    case Forget_password = "Forget Password?"
+    case Welcome = "Welcome to use the APP!"
+    case Email_and_password_cannot_be_empty = "Email and Password cannot be empty!"
+    case Please_input_valid_email = "Please input valid Email!"
+    case Login_success = "Login Success"
+    case Email_is_not_exist_or_incorrect_password = "Email isn't exist or incorrect password!"
+    case Get_verify_code = "Get verify code"
+    case Input_phone_number = "Input phone number"
+    case Verify_code = "Verify code"
+    case Input_verify_code = "Input verify code"
+    case Reset_your_password_to_000000 = "Reset your password to 000000"
+    case Phone_number_isnot_exist = "Phone number isn't exist"
+    case Verify_code_is_incorrect_please_try_again = "Verify code is incorrect, please try again"
+    
     // MARK: RegisterViewController
     case Email = "Email"
     case Phone = "Phone"
     case Confirm_password  = "Confirm Password"
     case Cancel_register = "Cancel Register"
-    // MARK: MainViewController
+    case Please_input_valid_email_or_phone = "Please input valid Email or Phone!"
+    case Password_do_not_match = "Password don't match!"
+    case Email_is_already_registered = "Email is already registered"
+    case Phone_is_already_registered = "Phone is already registered"
+    case Register_success = "Register success!"
     
-    case Login = "Login"
-    case Forget_password = "Forget Password?"
-    case Welcome = "Welcome to use the APP!"
-
     // MARK: - Password
     
     // MARK: PasswordMainViewController
@@ -98,38 +114,27 @@ enum LocalizableStrings: String {
     
     // MARK: - Settings
     
-    // MARK: SettingsMainViewController
-    
+    // MARK: SettingsViewController
     case Enable_AutoFill_Services = "Enable AutoFill Services"
-    case The_user_has_not_given_permission_for_the_app_to_access_the_biometrics = "The user has not given permission for the app to access the biometrics"
-    case Please_go_to_Settings_FaceID_Password_OtherApps_to_enable_App = "Please go to `Settings -> Face ID & Password -> Other Apps` to enable App"
     case Go_to_Settings = "Go to Settings"
+    case Info = "Info"
     case Sign_Out = "Sign Out"
     case iCloud_Backup = "iCloud Backup"
     case Please_select_AutoFill_Service = "Please select AutoFill Service"
     case AutoFill_service_is_enabled = "AutoFill service is enabled"
     case Change_Password = "Change Password"
-    // MARK: - Add
+    case Sign_Out_Success = "Sign out success!"
     
-    case Add = "Add"
-    case Cancel_Add = "Cancel Add"
-    case The_currently_entered_data_has_not_been_saved_Do_you_want_to_leave_this_screen = "The currently entered data has not been saved. Do you want to leave this screen?"
-    case Please_make_sure_all_required_fields_are_entered = "Please make sure all required fields are entered"
+    // MARK: - ChangePasswordViewController
     
-    // MARK: - Edit
-    
-    case Cancel_Edit = "Cancel Edit"
-    case Copy_Succeed = "Copy Succeed!"
-    case Information_has_been_copied_to_the_scrapbook = "Information has been copied to the scrapbook"
-    
-    // MARK: - Search
-    
-    case Search = "Search"
-    
-    // MARK: - iCloud Backup
+    case Input_origin_password = "Input Origin Password"
+    case Input_new_password = "Input New Password"
+    case Confirm_new_password = "Confirm New Password"
+    case Change_Password_Succeed = "Change Password Succeed!"
+    case Origin_password_is_incorrect = "Origin Password is incorrect!"
     
     // MARK: CKBackupRestoreViewController
-    case Info = "Info"
+    
     case BackupRestore = "Backup／Restore"
     case Last_backup_time = "Last backup time"
     case Backup_to_iCloud = "Backup to iCloud"
@@ -160,23 +165,39 @@ enum LocalizableStrings: String {
     case Whether_to_go_to_the_settings_to_open = "Whether to go to the settings to open"
     case Backup_data_on_iCloud_has_been_deleted = "Backup data on iCloud has been deleted"
     case There_is_currently_no_backup_data_of_App_on_iCloud_Please_execute_Backup_to_iCloud_first_and_then_perform_this_operation = "There is currently no backup data of App on iCloud. Please execute「Backup to iCloud」first, and then perform this operation."
+    case minutes15 = "15 Minutes"
+    case minutes30 = "30 Minutes"
+    case hour1 = "1 Hour"
+    case hours2 = "2 Hours"
+    case hours3 = "3 Hours"
+    case never = "Never"
+    case everyday = "Every Day"
+    case every3days = "Every 3 Days"
+    case everyweek = "Every Week"
+    case every2weeks = "Every 2 Weeks"
+    case everymonth = "Every Month"
+    // MARK: - Add
     
-    // MARK: - ResetPasswordViewController
-    case Input_origin_password = "Input Origin Password"
-    case Input_new_password = "Input New Password"
-    case Confirm_new_password = "Confirm New Password"
-    case Change_Password_Succeed = "Change Password Succeed!"
+    case Add = "Add"
+    case Cancel_Add = "Cancel Add"
+    case The_currently_entered_data_has_not_been_saved_Do_you_want_to_leave_this_screen = "The currently entered data has not been saved. Do you want to leave this screen?"
+    case Please_make_sure_all_required_fields_are_entered = "Please make sure all required fields are entered"
     
-    // MARK: - App Extension 的
+    // MARK: - Edit
     
-    // MARK: InputPasswordVC
-    case Extension_PassCode = "Extension_PassCode"
-    case Extension_Login = "Extension_Login"
-    case Extension_The_entered_passwords_do_not_match = "Extension_The entered passwords do not match"
-    case Extension_Save = "Extension_Save"
+    case Cancel_Edit = "Cancel Edit"
+    case Copy_Succeed = "Copy Succeed!"
+    case Information_has_been_copied_to_the_scrapbook = "Information has been copied to the scrapbook"
+    
+    // MARK: - Search
+    
+    case Search = "Search"
+    
+    // MARK: - App Extension
 
     // MARK: AutoFillViewController
-    
+    case Extension_Save = "Extension_Save"
+    case Please_login_first = "Please login first"
     case Extension_Add_Account = "Extension_Add Account"
 }
 

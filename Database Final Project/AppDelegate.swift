@@ -7,8 +7,6 @@
 import UIKit
 import IQKeyboardManagerSwift
 import os
-import FirebaseCore
-import FirebaseMessaging
 import BackgroundTasks
 
 //@main
@@ -27,9 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.shouldResignOnTouchOutside = true // 點空白處關鍵盤
         IQKeyboardManager.shared.enableAutoToolbar = true // 顯示工具列
         NotificationCenter.default.addObserver(self,
-                                               selector: #selector(applicationDidIdle10MinsAlert),
-                                               name: .kApplicationDidIdle10MinsNotification,
-                                               object: nil) // 監聽是否螢幕閒置 10 分鐘
+                                               selector: #selector(applicationDidIdle5MinsAlert),
+                                               name: .kApplicationDidIdle5MinsNotification,
+                                               object: nil) // 監聽是否螢幕閒置 5 分鐘
         // 螢幕截圖
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(didTakeScreenshot(notification:)),
@@ -41,7 +39,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                name: UIScreen.capturedDidChangeNotification,
                                                object: nil)
         
-        FirebaseApp.configure()
         
         
         // For iOS 10 display notification (sent via APNS)
@@ -69,10 +66,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    @objc func applicationDidIdle10MinsAlert() {
+    @objc func applicationDidIdle5MinsAlert() {
         if UserPreferences.shared.isSignIn {
             if Date() >= UserPreferences.shared.idleEndTime {
-                Logger().log("螢幕閒置 5mins，要將 App 上鎖！")
+                Logger().log("螢幕閒置 5mins，要將用戶登出")
                 DispatchQueue.main.async {
                     if let navigationController = UIApplication.shared
                         .connectedScenes
@@ -80,11 +77,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         .flatMap({ $0.windows })
                         .first(where: { $0.isKeyWindow })?
                         .rootViewController as? UINavigationController {
-                        navigationController.pushViewController(MainViewController(), animated: false)
+                        navigationController.pushViewController(LoginViewController(), animated: false)
                     }
                 }
             } else {
-                Logger().log("尚未到達螢幕閒置 5mins！")
+                Logger().log("尚未到達螢幕閒置 5mins")
             }
         } else {
             print("尚未登入，不處理螢幕閒置 5mins")

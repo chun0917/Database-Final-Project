@@ -22,8 +22,6 @@
 		0C8930CA2876B51C004CD501 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8930C92876B51C004CD501 /* AuthenticationServices.framework */; };
 		0C8930D52876B51D004CD501 /* PasswordAutoFill.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0C8930C82876B51C004CD501 /* PasswordAutoFill.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0C8930DA2876B52B004CD501 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8930C92876B51C004CD501 /* AuthenticationServices.framework */; };
-		0C8BE1532934C3F000B78EB2 /* PasscodeTextFieldImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BE1522934C3F000B78EB2 /* PasscodeTextFieldImplementation.swift */; };
-		0C8BE1542934C3F000B78EB2 /* PasscodeTextFieldImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BE1522934C3F000B78EB2 /* PasscodeTextFieldImplementation.swift */; };
 		0CA1920E290142C10063E530 /* CKBackupRestoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1920C290142C10063E530 /* CKBackupRestoreViewController.swift */; };
 		0CA1920F290142C10063E530 /* CKBackupRestoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA1920D290142C10063E530 /* CKBackupRestoreViewController.xib */; };
 		0CA1921329014A830063E530 /* BackupHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1921129014A830063E530 /* BackupHeaderTableViewCell.swift */; };
@@ -52,8 +50,8 @@
 		8F87D7ED2B2D86E400CF417E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F87D7EB2B2D86E400CF417E /* RegisterViewController.swift */; };
 		8F87D7EE2B2D86E400CF417E /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F87D7EC2B2D86E400CF417E /* RegisterViewController.xib */; };
 		8F87D7F62B2E007200CF417E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F87D7F52B2E007200CF417E /* GoogleService-Info.plist */; };
-		8F87D7F92B30717D00CF417E /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F87D7F72B30717D00CF417E /* ResetPasswordViewController.swift */; };
-		8F87D7FA2B30717D00CF417E /* ResetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F87D7F82B30717D00CF417E /* ResetPasswordViewController.xib */; };
+		8F87D7F92B30717D00CF417E /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F87D7F72B30717D00CF417E /* ChangePasswordViewController.swift */; };
+		8F87D7FA2B30717D00CF417E /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F87D7F82B30717D00CF417E /* ChangePasswordViewController.xib */; };
 		8F87D7FC2B30BB7100CF417E /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F87D7FB2B30BB7000CF417E /* AuthenticationManager.swift */; };
 		D007F12C28C255C10059AFA2 /* CryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D007F12B28C255C10059AFA2 /* CryptoManager.swift */; };
 		D00E7598298D5EB800FE1C5E /* iCloudEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E7597298D5EB800FE1C5E /* iCloudEntity.swift */; };
@@ -70,14 +68,13 @@
 		D025991D286E97D600882615 /* PasswordMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D025991B286E97D600882615 /* PasswordMainViewController.xib */; };
 		D0259920286E97ED00882615 /* NotesMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025991E286E97ED00882615 /* NotesMainViewController.swift */; };
 		D0259921286E97ED00882615 /* NotesMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D025991F286E97ED00882615 /* NotesMainViewController.xib */; };
-		D0259924286E97FE00882615 /* SettingsMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0259922286E97FE00882615 /* SettingsMainViewController.swift */; };
-		D0259925286E97FE00882615 /* SettingsMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0259923286E97FE00882615 /* SettingsMainViewController.xib */; };
+		D0259924286E97FE00882615 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0259922286E97FE00882615 /* SettingsViewController.swift */; };
+		D0259925286E97FE00882615 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0259923286E97FE00882615 /* SettingsViewController.xib */; };
 		D0259928286EAD3100882615 /* PasswordMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0259926286EAD3100882615 /* PasswordMainTableViewCell.swift */; };
 		D0259929286EAD3100882615 /* PasswordMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0259927286EAD3100882615 /* PasswordMainTableViewCell.xib */; };
 		D025992C286EC56200882615 /* PasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025992B286EC56200882615 /* PasswordModel.swift */; };
 		D0259931287175B000882615 /* NotesMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025992F287175B000882615 /* NotesMainTableViewCell.swift */; };
 		D0259932287175B000882615 /* NotesMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0259930287175B000882615 /* NotesMainTableViewCell.xib */; };
-		D026BBA528E9857B00BAA749 /* RealtimeDatabaseUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = D026BBA428E9857B00BAA749 /* RealtimeDatabaseUpload.swift */; };
 		D026BBA728E9895500BAA749 /* CryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D007F12B28C255C10059AFA2 /* CryptoManager.swift */; };
 		D031F57D2977D58800116BD5 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D038806A28FFA41300C69BD8 /* UIColor+Extensions.swift */; };
 		D034ECC028A89D7B006856FB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D034ECC228A89D7B006856FB /* Localizable.strings */; };
@@ -86,7 +83,6 @@
 		D034ECD728AFF006006856FB /* GenerateRandomPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D034ECD528AFF006006856FB /* GenerateRandomPasswordViewController.xib */; };
 		D034ECD828AFF006006856FB /* GenerateRandomPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034ECD628AFF006006856FB /* GenerateRandomPasswordViewController.swift */; };
 		D034ECDD28B0AF52006856FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D034ECDF28B0AF52006856FB /* InfoPlist.strings */; };
-		D034ECE428B0CD40006856FB /* SpinningCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034ECE328B0CD40006856FB /* SpinningCircleView.swift */; };
 		D036FF0728E8A30400E6D990 /* Localizables.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034ECC728A8A60B006856FB /* Localizables.swift */; };
 		D036FF0B28E9438200E6D990 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036FF0A28E9438200E6D990 /* UIView+Extensions.swift */; };
 		D036FF0D28E9439900E6D990 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D036FF0C28E9439900E6D990 /* UIViewController+Extensions.swift */; };
@@ -114,7 +110,6 @@
 		D099A2C228F528BB000D90BD /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D099A2C128F528BB000D90BD /* String+Extensions.swift */; };
 		D099A2C328F529B2000D90BD /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D099A2C128F528BB000D90BD /* String+Extensions.swift */; };
 		D099A2C528F52E5B000D90BD /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D099A2C428F52E5B000D90BD /* Data+Extensions.swift */; };
-		D099ECAA28F9987D006FFF9C /* ChromeExtensionDataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D099ECA928F9987D006FFF9C /* ChromeExtensionDataInfo.swift */; };
 		D09F128C2910C07B004D38B9 /* CustomPasswordLockTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09F128B2910C07B004D38B9 /* CustomPasswordLockTextField.swift */; };
 		D09F128E2910D405004D38B9 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09F128D2910D405004D38B9 /* CustomTextField.swift */; };
 		D09F128F2910D405004D38B9 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09F128D2910D405004D38B9 /* CustomTextField.swift */; };
@@ -122,22 +117,18 @@
 		D0A0B27B29557FE400639A91 /* AppDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A0B27A29557FE400639A91 /* AppDefine.swift */; };
 		D0A5FB6F2866100900A59BF0 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A5FB6E2866100900A59BF0 /* Alert.swift */; };
 		D0A5FB73286613BD00A59BF0 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A5FB72286613BD00A59BF0 /* UserPreferences.swift */; };
-		D0A61915290CEE380074AE58 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A61914290CEE380074AE58 /* UIApplication+Extensions.swift */; };
 		D0C2B78B28F570DD004658C9 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D099A2C428F52E5B000D90BD /* Data+Extensions.swift */; };
-		D0D2A5E728DD9CFE0010C791 /* FirebaseRealtimeDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D2A5E628DD9CFE0010C791 /* FirebaseRealtimeDatabase.swift */; };
 		D0D6C7FF2860ABCB006A3A5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6C7FE2860ABCB006A3A5B /* AppDelegate.swift */; };
 		D0D6C8012860ABCB006A3A5B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6C8002860ABCB006A3A5B /* SceneDelegate.swift */; };
 		D0D6C8082860ABCD006A3A5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D6C8072860ABCD006A3A5B /* Assets.xcassets */; };
 		D0D6C80B2860ABCD006A3A5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D6C8092860ABCD006A3A5B /* LaunchScreen.storyboard */; };
-		D0D6C8172860AC14006A3A5B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6C8152860AC14006A3A5B /* MainViewController.swift */; };
-		D0D6C8182860AC14006A3A5B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0D6C8162860AC14006A3A5B /* MainViewController.xib */; };
+		D0D6C8172860AC14006A3A5B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6C8152860AC14006A3A5B /* LoginViewController.swift */; };
+		D0D6C8182860AC14006A3A5B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0D6C8162860AC14006A3A5B /* LoginViewController.xib */; };
 		D0D6C81A2860AC28006A3A5B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D6C8192860AC28006A3A5B /* BaseViewController.swift */; };
 		D0D92C6E2955752E000E52B8 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A5FB72286613BD00A59BF0 /* UserPreferences.swift */; };
 		D0F61C6229A8FD6C00ED0FBA /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F61C6129A8FD6C00ED0FBA /* NavigationBarView.swift */; };
 		D0F61C6429A8FD7800ED0FBA /* NavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0F61C6329A8FD7800ED0FBA /* NavigationBarView.xib */; };
 		D0F61C6729A9B35400ED0FBA /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F61C6629A9B35400ED0FBA /* StatusBarView.swift */; };
-		D0FAC3DA2931FA9000611C5C /* PasscodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FAC3D92931FA9000611C5C /* PasscodeTextField.swift */; };
-		D0FAC3DB2931FA9000611C5C /* PasscodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FAC3D92931FA9000611C5C /* PasscodeTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,7 +171,6 @@
 		0C8930C92876B51C004CD501 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		0C8930D12876B51D004CD501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C8930D22876B51D004CD501 /* PasswordAutoFill.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PasswordAutoFill.entitlements; sourceTree = "<group>"; };
-		0C8BE1522934C3F000B78EB2 /* PasscodeTextFieldImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeTextFieldImplementation.swift; sourceTree = "<group>"; };
 		0CA1920C290142C10063E530 /* CKBackupRestoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKBackupRestoreViewController.swift; sourceTree = "<group>"; };
 		0CA1920D290142C10063E530 /* CKBackupRestoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CKBackupRestoreViewController.xib; sourceTree = "<group>"; };
 		0CA1921129014A830063E530 /* BackupHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupHeaderTableViewCell.swift; sourceTree = "<group>"; };
@@ -200,17 +190,15 @@
 		0CF9AAA328AA12BD00F7888D /* AddNotesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNotesViewController.xib; sourceTree = "<group>"; };
 		103A093A8344240D212232C7 /* Pods-PasswordAutoFill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordAutoFill.debug.xcconfig"; path = "Target Support Files/Pods-PasswordAutoFill/Pods-PasswordAutoFill.debug.xcconfig"; sourceTree = "<group>"; };
 		36F2A6CFBA93FA1D5DAF0B87 /* Pods-Database Final Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Database Final Project.debug.xcconfig"; path = "Target Support Files/Pods-Database Final Project/Pods-Database Final Project.debug.xcconfig"; sourceTree = "<group>"; };
-		3C9DCFE07DF96CA617DD749B /* Pods-TekPass Keep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TekPass Keep.debug.xcconfig"; path = "Target Support Files/Pods-TekPass Keep/Pods-TekPass Keep.debug.xcconfig"; sourceTree = "<group>"; };
 		61CD1632BCB3A498E0B24F31 /* Pods_Database_Final_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Database_Final_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7438051F28B491D5009CD8AF /* LocalDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDatabase.swift; sourceTree = "<group>"; };
 		74C5D4072906AE2A00E11388 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		8F87D7EB2B2D86E400CF417E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		8F87D7EC2B2D86E400CF417E /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		8F87D7F52B2E007200CF417E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		8F87D7F72B30717D00CF417E /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
-		8F87D7F82B30717D00CF417E /* ResetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResetPasswordViewController.xib; sourceTree = "<group>"; };
+		8F87D7F72B30717D00CF417E /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		8F87D7F82B30717D00CF417E /* ChangePasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePasswordViewController.xib; sourceTree = "<group>"; };
 		8F87D7FB2B30BB7000CF417E /* AuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
-		965A53DDC048481F639B61A9 /* Pods-TekPass Keep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TekPass Keep.release.xcconfig"; path = "Target Support Files/Pods-TekPass Keep/Pods-TekPass Keep.release.xcconfig"; sourceTree = "<group>"; };
 		9F125E1EBF3A89026F680FFA /* Pods-PasswordAutoFill.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordAutoFill.release.xcconfig"; path = "Target Support Files/Pods-PasswordAutoFill/Pods-PasswordAutoFill.release.xcconfig"; sourceTree = "<group>"; };
 		AEFBBA9F0C78CA0BE5BC6C10 /* Pods_PasswordAutoFill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PasswordAutoFill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C86599C0F0272DC7DE3957A9 /* Pods-Database Final Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Database Final Project.release.xcconfig"; path = "Target Support Files/Pods-Database Final Project/Pods-Database Final Project.release.xcconfig"; sourceTree = "<group>"; };
@@ -225,14 +213,13 @@
 		D025991B286E97D600882615 /* PasswordMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordMainViewController.xib; sourceTree = "<group>"; };
 		D025991E286E97ED00882615 /* NotesMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesMainViewController.swift; sourceTree = "<group>"; };
 		D025991F286E97ED00882615 /* NotesMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesMainViewController.xib; sourceTree = "<group>"; };
-		D0259922286E97FE00882615 /* SettingsMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMainViewController.swift; sourceTree = "<group>"; };
-		D0259923286E97FE00882615 /* SettingsMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsMainViewController.xib; sourceTree = "<group>"; };
+		D0259922286E97FE00882615 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D0259923286E97FE00882615 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		D0259926286EAD3100882615 /* PasswordMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordMainTableViewCell.swift; sourceTree = "<group>"; };
 		D0259927286EAD3100882615 /* PasswordMainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordMainTableViewCell.xib; sourceTree = "<group>"; };
 		D025992B286EC56200882615 /* PasswordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordModel.swift; sourceTree = "<group>"; };
 		D025992F287175B000882615 /* NotesMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesMainTableViewCell.swift; sourceTree = "<group>"; };
 		D0259930287175B000882615 /* NotesMainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesMainTableViewCell.xib; sourceTree = "<group>"; };
-		D026BBA428E9857B00BAA749 /* RealtimeDatabaseUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeDatabaseUpload.swift; sourceTree = "<group>"; };
 		D034ECBC28A89D22006856FB /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		D034ECC128A89D7B006856FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D034ECC328A89D7E006856FB /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -241,7 +228,6 @@
 		D034ECD628AFF006006856FB /* GenerateRandomPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateRandomPasswordViewController.swift; sourceTree = "<group>"; };
 		D034ECDE28B0AF52006856FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D034ECE028B0AF54006856FB /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		D034ECE328B0CD40006856FB /* SpinningCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinningCircleView.swift; sourceTree = "<group>"; };
 		D036FF0A28E9438200E6D990 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		D036FF0C28E9439900E6D990 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		D036FF0E28E943B800E6D990 /* Notification+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extensions.swift"; sourceTree = "<group>"; };
@@ -260,28 +246,24 @@
 		D083F3BA2943571D00E4A9F8 /* CheckBoxButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckBoxButtonView.xib; sourceTree = "<group>"; };
 		D099A2C128F528BB000D90BD /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		D099A2C428F52E5B000D90BD /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
-		D099ECA928F9987D006FFF9C /* ChromeExtensionDataInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChromeExtensionDataInfo.swift; sourceTree = "<group>"; };
 		D09F128B2910C07B004D38B9 /* CustomPasswordLockTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPasswordLockTextField.swift; sourceTree = "<group>"; };
 		D09F128D2910D405004D38B9 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		D0A0B27A29557FE400639A91 /* AppDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefine.swift; sourceTree = "<group>"; };
 		D0A5FB6E2866100900A59BF0 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		D0A5FB72286613BD00A59BF0 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
-		D0A61914290CEE380074AE58 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		D0AD76022960515C00460F37 /* Database Final Project.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Database Final Project.entitlements"; sourceTree = "<group>"; };
-		D0D2A5E628DD9CFE0010C791 /* FirebaseRealtimeDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRealtimeDatabase.swift; sourceTree = "<group>"; };
 		D0D6C7FB2860ABCB006A3A5B /* Database Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Database Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D6C7FE2860ABCB006A3A5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0D6C8002860ABCB006A3A5B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D0D6C8072860ABCD006A3A5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0D6C80A2860ABCD006A3A5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0D6C80C2860ABCD006A3A5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0D6C8152860AC14006A3A5B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		D0D6C8162860AC14006A3A5B /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		D0D6C8152860AC14006A3A5B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D0D6C8162860AC14006A3A5B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		D0D6C8192860AC28006A3A5B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		D0F61C6129A8FD6C00ED0FBA /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		D0F61C6329A8FD7800ED0FBA /* NavigationBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBarView.xib; sourceTree = "<group>"; };
 		D0F61C6629A9B35400ED0FBA /* StatusBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
-		D0FAC3D92931FA9000611C5C /* PasscodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -357,15 +339,6 @@
 			path = PasswordAutoFill;
 			sourceTree = "<group>";
 		};
-		0C8BE1512934C3AC00B78EB2 /* PasscodeTextField */ = {
-			isa = PBXGroup;
-			children = (
-				D0FAC3D92931FA9000611C5C /* PasscodeTextField.swift */,
-				0C8BE1522934C3F000B78EB2 /* PasscodeTextFieldImplementation.swift */,
-			);
-			path = PasscodeTextField;
-			sourceTree = "<group>";
-		};
 		0CA19206290142570063E530 /* iCloudBackup */ = {
 			isa = PBXGroup;
 			children = (
@@ -389,24 +362,49 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		8F87D7FD2B30D9FB00CF417E /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D0D6C8152860AC14006A3A5B /* LoginViewController.swift */,
+				D0D6C8162860AC14006A3A5B /* LoginViewController.xib */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		8F87D7FE2B30DA1400CF417E /* RegisterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8F87D7EB2B2D86E400CF417E /* RegisterViewController.swift */,
+				8F87D7EC2B2D86E400CF417E /* RegisterViewController.xib */,
+			);
+			path = RegisterViewController;
+			sourceTree = "<group>";
+		};
+		8F87D7FF2B30DA4600CF417E /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D0259922286E97FE00882615 /* SettingsViewController.swift */,
+				D0259923286E97FE00882615 /* SettingsViewController.xib */,
+			);
+			path = SettingsViewController;
+			sourceTree = "<group>";
+		};
+		8F87D8002B30DA9000CF417E /* ChangePasswordViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8F87D7F72B30717D00CF417E /* ChangePasswordViewController.swift */,
+				8F87D7F82B30717D00CF417E /* ChangePasswordViewController.xib */,
+			);
+			path = ChangePasswordViewController;
+			sourceTree = "<group>";
+		};
 		D0157C8928F7D99600A3C48B /* Database */ = {
 			isa = PBXGroup;
 			children = (
 				D0D92C6D2955740B000E52B8 /* Local */,
 				D0157C8B28F7D9C000A3C48B /* iCloud */,
-				D0157C8A28F7D9AC00A3C48B /* Firebase Realtime Database */,
 			);
 			path = Database;
-			sourceTree = "<group>";
-		};
-		D0157C8A28F7D9AC00A3C48B /* Firebase Realtime Database */ = {
-			isa = PBXGroup;
-			children = (
-				D026BBA428E9857B00BAA749 /* RealtimeDatabaseUpload.swift */,
-				D0D2A5E628DD9CFE0010C791 /* FirebaseRealtimeDatabase.swift */,
-				D099ECA928F9987D006FFF9C /* ChromeExtensionDataInfo.swift */,
-			);
-			path = "Firebase Realtime Database";
 			sourceTree = "<group>";
 		};
 		D0157C8B28F7D9C000A3C48B /* iCloud */ = {
@@ -431,11 +429,9 @@
 		D0159CBE28E94C3900117EA1 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				D0259922286E97FE00882615 /* SettingsMainViewController.swift */,
-				D0259923286E97FE00882615 /* SettingsMainViewController.xib */,
+				8F87D8002B30DA9000CF417E /* ChangePasswordViewController */,
+				8F87D7FF2B30DA4600CF417E /* SettingsViewController */,
 				D0159CC328E94CC000117EA1 /* Components */,
-				8F87D7F72B30717D00CF417E /* ResetPasswordViewController.swift */,
-				8F87D7F82B30717D00CF417E /* ResetPasswordViewController.xib */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -525,8 +521,6 @@
 		D038806928FFA3FC00C69BD8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				D0A61914290CEE380074AE58 /* UIApplication+Extensions.swift */,
-				D03D4DBC2909671C00B48679 /* UIBarButtonItem+Extensions.swift */,
 				D0D92C6B295573A2000E52B8 /* Shared */,
 			);
 			path = Extensions;
@@ -583,17 +577,8 @@
 			children = (
 				D09F128B2910C07B004D38B9 /* CustomPasswordLockTextField.swift */,
 				D09F128D2910D405004D38B9 /* CustomTextField.swift */,
-				0C8BE1512934C3AC00B78EB2 /* PasscodeTextField */,
 			);
 			path = "Custom TextField";
-			sourceTree = "<group>";
-		};
-		D0A0B27829557E5800639A91 /* Progress View */ = {
-			isa = PBXGroup;
-			children = (
-				D034ECE328B0CD40006856FB /* SpinningCircleView.swift */,
-			);
-			path = "Progress View";
 			sourceTree = "<group>";
 		};
 		D0A0B27929557EFE00639A91 /* Resources */ = {
@@ -672,7 +657,6 @@
 				D0F61C6029A8FD5200ED0FBA /* NavigationBarView */,
 				D083F3C229436A4300E4A9F8 /* CheckBoxButton */,
 				D0A0B277295576C100639A91 /* Custom TextField */,
-				D0A0B27829557E5800639A91 /* Progress View */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -694,10 +678,8 @@
 		D0D6C81F2860B728006A3A5B /* Initial Flow */ = {
 			isa = PBXGroup;
 			children = (
-				D0D6C8152860AC14006A3A5B /* MainViewController.swift */,
-				D0D6C8162860AC14006A3A5B /* MainViewController.xib */,
-				8F87D7EB2B2D86E400CF417E /* RegisterViewController.swift */,
-				8F87D7EC2B2D86E400CF417E /* RegisterViewController.xib */,
+				8F87D7FD2B30D9FB00CF417E /* LoginViewController */,
+				8F87D7FE2B30DA1400CF417E /* RegisterViewController */,
 			);
 			path = "Initial Flow";
 			sourceTree = "<group>";
@@ -705,6 +687,7 @@
 		D0D92C6B295573A2000E52B8 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				D03D4DBC2909671C00B48679 /* UIBarButtonItem+Extensions.swift */,
 				D038806A28FFA41300C69BD8 /* UIColor+Extensions.swift */,
 				D099A2C428F52E5B000D90BD /* Data+Extensions.swift */,
 				74C5D4072906AE2A00E11388 /* Date+Extensions.swift */,
@@ -769,8 +752,6 @@
 			children = (
 				103A093A8344240D212232C7 /* Pods-PasswordAutoFill.debug.xcconfig */,
 				9F125E1EBF3A89026F680FFA /* Pods-PasswordAutoFill.release.xcconfig */,
-				3C9DCFE07DF96CA617DD749B /* Pods-TekPass Keep.debug.xcconfig */,
-				965A53DDC048481F639B61A9 /* Pods-TekPass Keep.release.xcconfig */,
 				36F2A6CFBA93FA1D5DAF0B87 /* Pods-Database Final Project.debug.xcconfig */,
 				C86599C0F0272DC7DE3957A9 /* Pods-Database Final Project.release.xcconfig */,
 			);
@@ -887,7 +868,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0259925286E97FE00882615 /* SettingsMainViewController.xib in Resources */,
+				D0259925286E97FE00882615 /* SettingsViewController.xib in Resources */,
 				0CA1921C29029BE20063E530 /* BackupTableViewCell.xib in Resources */,
 				D0259921286E97ED00882615 /* NotesMainViewController.xib in Resources */,
 				D034ECC028A89D7B006856FB /* Localizable.strings in Resources */,
@@ -900,11 +881,11 @@
 				0CA1920F290142C10063E530 /* CKBackupRestoreViewController.xib in Resources */,
 				D0F61C6429A8FD7800ED0FBA /* NavigationBarView.xib in Resources */,
 				8F87D7EE2B2D86E400CF417E /* RegisterViewController.xib in Resources */,
-				D0D6C8182860AC14006A3A5B /* MainViewController.xib in Resources */,
+				D0D6C8182860AC14006A3A5B /* LoginViewController.xib in Resources */,
 				D025991D286E97D600882615 /* PasswordMainViewController.xib in Resources */,
 				D083F3BD2943571D00E4A9F8 /* CheckBoxButtonView.xib in Resources */,
 				0C42418F28BDFACB00D055A2 /* SearchTableViewCell.xib in Resources */,
-				8F87D7FA2B30717D00CF417E /* ResetPasswordViewController.xib in Resources */,
+				8F87D7FA2B30717D00CF417E /* ChangePasswordViewController.xib in Resources */,
 				0CA1921429014A830063E530 /* BackupHeaderTableViewCell.xib in Resources */,
 				0C42418A28BDF8F200D055A2 /* SearchViewController.xib in Resources */,
 				8F87D7F62B2E007200CF417E /* GoogleService-Info.plist in Resources */,
@@ -1011,9 +992,7 @@
 				D026BBA728E9895500BAA749 /* CryptoManager.swift in Sources */,
 				0C04679F28F816180046BBB6 /* NewAddViewController.swift in Sources */,
 				D00E7599298D5EDB00FE1C5E /* iCloudEntity.swift in Sources */,
-				0C8BE1542934C3F000B78EB2 /* PasscodeTextFieldImplementation.swift in Sources */,
 				0C315E792897E81900035448 /* AutoFillViewController.swift in Sources */,
-				D0FAC3DB2931FA9000611C5C /* PasscodeTextField.swift in Sources */,
 				D036FF0728E8A30400E6D990 /* Localizables.swift in Sources */,
 				D09F12902910D48C004D38B9 /* CustomPasswordLockTextField.swift in Sources */,
 				0C0467A428F8176A0046BBB6 /* NewGenerateRandomPasswordViewController.swift in Sources */,
@@ -1046,21 +1025,17 @@
 			files = (
 				D036FF0D28E9439900E6D990 /* UIViewController+Extensions.swift in Sources */,
 				8F87D7ED2B2D86E400CF417E /* RegisterViewController.swift in Sources */,
-				8F87D7F92B30717D00CF417E /* ResetPasswordViewController.swift in Sources */,
+				8F87D7F92B30717D00CF417E /* ChangePasswordViewController.swift in Sources */,
 				0CA1921329014A830063E530 /* BackupHeaderTableViewCell.swift in Sources */,
-				D0D6C8172860AC14006A3A5B /* MainViewController.swift in Sources */,
+				D0D6C8172860AC14006A3A5B /* LoginViewController.swift in Sources */,
 				D034ECD828AFF006006856FB /* GenerateRandomPasswordViewController.swift in Sources */,
 				D025992C286EC56200882615 /* PasswordModel.swift in Sources */,
 				0C42418928BDF8F200D055A2 /* SearchViewController.swift in Sources */,
 				D0D6C81A2860AC28006A3A5B /* BaseViewController.swift in Sources */,
 				D0D6C7FF2860ABCB006A3A5B /* AppDelegate.swift in Sources */,
 				D099A2C528F52E5B000D90BD /* Data+Extensions.swift in Sources */,
-				D099ECAA28F9987D006FFF9C /* ChromeExtensionDataInfo.swift in Sources */,
 				D0499D4228B9CE8800EEDA28 /* main.swift in Sources */,
-				D0FAC3DA2931FA9000611C5C /* PasscodeTextField.swift in Sources */,
-				0C8BE1532934C3F000B78EB2 /* PasscodeTextFieldImplementation.swift in Sources */,
 				D038806B28FFA41300C69BD8 /* UIColor+Extensions.swift in Sources */,
-				D0D2A5E728DD9CFE0010C791 /* FirebaseRealtimeDatabase.swift in Sources */,
 				7438052028B491D5009CD8AF /* LocalDatabase.swift in Sources */,
 				D036FF1128E943D800E6D990 /* Encodable+Extensions.swift in Sources */,
 				D036FF0B28E9438200E6D990 /* UIView+Extensions.swift in Sources */,
@@ -1074,7 +1049,6 @@
 				0CA1921729029BAB0063E530 /* BackupOperationTableViewCell.swift in Sources */,
 				0CD050E328B4E11200A82828 /* EditPasswordViewController.swift in Sources */,
 				D020A4F329508C6300756A9E /* SFSymbols.swift in Sources */,
-				D0A61915290CEE380074AE58 /* UIApplication+Extensions.swift in Sources */,
 				0CF9AAA028AA12A600F7888D /* AddPasswordViewController.swift in Sources */,
 				0CA4CF7E28B382790076DFE5 /* SingletonPatternOfPasswordAndNotes.swift in Sources */,
 				D025991C286E97D600882615 /* PasswordMainViewController.swift in Sources */,
@@ -1083,7 +1057,6 @@
 				74C5D4082906AE2A00E11388 /* Date+Extensions.swift in Sources */,
 				0C42418E28BDFACB00D055A2 /* SearchTableViewCell.swift in Sources */,
 				D083F3BB2943571D00E4A9F8 /* CheckBoxButtonView.swift in Sources */,
-				D034ECE428B0CD40006856FB /* SpinningCircleView.swift in Sources */,
 				D00E75A1298E7A3500FE1C5E /* UIImage+Extensions.swift in Sources */,
 				D0259920286E97ED00882615 /* NotesMainViewController.swift in Sources */,
 				D0259931287175B000882615 /* NotesMainTableViewCell.swift in Sources */,
@@ -1091,11 +1064,10 @@
 				D05A4598287180FB007492A5 /* SettingsMainTableViewCell.swift in Sources */,
 				D099A2C228F528BB000D90BD /* String+Extensions.swift in Sources */,
 				8F87D7FC2B30BB7100CF417E /* AuthenticationManager.swift in Sources */,
-				D026BBA528E9857B00BAA749 /* RealtimeDatabaseUpload.swift in Sources */,
 				D0157C8D28F7DA3300A3C48B /* CloudKitDatabase.swift in Sources */,
 				D0A5FB6F2866100900A59BF0 /* Alert.swift in Sources */,
 				D00E75A82993907900FE1C5E /* UIAlertController+Extensions.swift in Sources */,
-				D0259924286E97FE00882615 /* SettingsMainViewController.swift in Sources */,
+				D0259924286E97FE00882615 /* SettingsViewController.swift in Sources */,
 				D03D4DBD2909671C00B48679 /* UIBarButtonItem+Extensions.swift in Sources */,
 				D00E7598298D5EB800FE1C5E /* iCloudEntity.swift in Sources */,
 				D09F128C2910C07B004D38B9 /* CustomPasswordLockTextField.swift in Sources */,

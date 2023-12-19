@@ -7,7 +7,7 @@
 import UIKit
 import FMDB
 
-class MainViewController: BaseViewController {
+class LoginViewController: BaseViewController {
     
     // MARK: - IBOutlet
     
@@ -29,10 +29,14 @@ class MainViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         UserPreferences.shared.isSignIn = false
-        print(UserPreferences.shared.isSignIn)
+        print("isSignIn:",UserPreferences.shared.isSignIn)
         setupUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        setupUI()
+    }
     // MARK: - UI Settings
     
     func setupUI() {
@@ -49,7 +53,7 @@ class MainViewController: BaseViewController {
         setupLabels()
     }
     
-    /// 判斷是否成功連線至資料庫
+    // 判斷是否成功連線至資料庫
     func connectDB() -> Bool {
         var isOpen: Bool = false
         self.database = FMDatabase(path: UserPreferences.shared.databasePath)
@@ -63,12 +67,14 @@ class MainViewController: BaseViewController {
         return isOpen
     }
     
+    // Email 正則
     func isValidEmail(email: String) -> Bool {
         let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
         let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
         return emailPredicate.evaluate(with: email)
     }
     
+    // 成功登入時，獲取用戶註冊的手機
     func fetchPhone(email: String){
         let query = "SELECT phone FROM USER WHERE email = ?"
         do {
@@ -88,6 +94,7 @@ class MainViewController: BaseViewController {
         }
     }
     
+    // 成功登入時，獲取用戶的userID
     func fetchUserID(email: String){
         let query = "SELECT userID FROM USER WHERE email = ?"
         do {
@@ -127,9 +134,11 @@ class MainViewController: BaseViewController {
     private func setupTextFields() {
         // 信箱
         emailTextField.placeholder = translate(.Email)
+        emailTextField.text = ""
         
         // 密碼
         passwordTextField.placeholder = translate(.Password)
+        passwordTextField.text = ""
     }
     
     /// 設定 Label 樣式
@@ -144,12 +153,12 @@ class MainViewController: BaseViewController {
     @IBAction func loginBtnClicked(_ sender: UIButton) {
         if (UserPreferences.shared.isSignIn == false) {
             if (emailTextField.text == "" || emailTextField.text == "") {
-                Alert.showToastWith(message: "信箱密碼不得為空！",
+                Alert.showToastWith(message: translate(.Email_and_password_cannot_be_empty),
                                     vc: self,
                                     during: .short)
             }
             else if (isValidEmail(email: emailTextField.text!) == false) {
-                Alert.showToastWith(message: "請輸入有效的信箱！",
+                Alert.showToastWith(message: translate(.Please_input_valid_email),
                                     vc: self,
                                     during: .short)
             }
@@ -161,14 +170,14 @@ class MainViewController: BaseViewController {
                         if (results.next()) {
                             fetchPhone(email: emailTextField.text!)
                             fetchUserID(email: emailTextField.text!)
-                            Alert.showToastWith(message: "登入成功",
+                            Alert.showToastWith(message: translate(.Login_success),
                                                 vc: self,
                                                 during: .short
                                                 , dismiss:  {
                                 UserPreferences.shared.isSignIn = true
                                 let passwordVC = PasswordMainViewController()
                                 let notesVC = NotesMainViewController()
-                                let settingsVC = SettingsMainViewController()
+                                let settingsVC = SettingsViewController()
                                 let vcsArray = [passwordVC, notesVC, settingsVC]
                                 let vcTitleArray = [translate(.Password), translate(.Notes), translate(.Settings)]
                                 let imageNameArray: [SFSymbols] = [.key, .notes, .settings]
@@ -180,7 +189,7 @@ class MainViewController: BaseViewController {
                             })
                         }
                         else {
-                            Alert.showToastWith(message: "未存在此信箱或密碼錯誤！",
+                            Alert.showToastWith(message: translate(.Email_is_not_exist_or_incorrect_password),
                                                 vc: self,
                                                 during: .long)
                         }
@@ -193,12 +202,12 @@ class MainViewController: BaseViewController {
         }
     }
     @IBAction func forgetPasswordBtnClicked(_ sender: Any) {
-        let alertController = UIAlertController(title: "Enter Text", message: nil, preferredStyle: .alert)
+        let alertController = UIAlertController(title: translate(.Get_verify_code), message: nil, preferredStyle: .alert)
         alertController.addTextField { textField in
-            textField.placeholder = "Type something..."
+            textField.placeholder = translate(.Input_phone_number)
         }
         // 添加一個確認按鈕
-        let confirmAction = UIAlertAction(title: "OK", style: .default) { [unowned self] _ in
+        let confirmAction = UIAlertAction(title: translate(.Confirm), style: .default) { [unowned self] _ in
             // 獲取使用者輸入的文字
             if let text = alertController.textFields?.first?.text {
                 print("Entered text: \(text)")
@@ -208,22 +217,25 @@ class MainViewController: BaseViewController {
                         let results: FMResultSet = try database.executeQuery(query, values: [text])
                         if (results.next()) {
                             let verifyCode = Int.random(in: 100000 ..< 1000000)
-                            UserNotifications.shared.add(identifier: .icloud, subTitle: "test", body: "驗證碼是\(verifyCode)")
-                            let alertControllers = UIAlertController(title: "Enter Text", message: nil, preferredStyle: .alert)
+                            UserNotifications.shared.add(identifier: .icloud, subTitle: translate(.Verify_code), body: translate(.Verify_code) + ":\(verifyCode)")
+                            let alertControllers = UIAlertController(title: translate(.Input_verify_code), message: nil, preferredStyle: .alert)
                             alertControllers.addTextField { textField in
-                                textField.placeholder = "Type something..."
+                                textField.placeholder = translate(.Verify_code)
                             }
                             // 添加一個確認按鈕
-                            let confirmActions = UIAlertAction(title: "OK", style: .default){ _ in
+                            let confirmActions = UIAlertAction(title: translate(.Confirm), style: .default){ _ in
                                 if let texts = alertControllers.textFields?.first?.text {
                                     if (texts == "\(verifyCode)") {
                                         let querys = "UPDATE USER SET password = ? WHERE phone = ?"
                                         do {
                                             try database.executeUpdate(querys, values: ["000000",text])
-                                            Alert.showToastWith(message: "已重設密碼為000000", vc: self, during: .short)
+                                            Alert.showToastWith(message: translate(.Reset_your_password_to_000000), vc: self, during: .short)
                                         } catch {
                                             print(error.localizedDescription)
                                         }
+                                    }
+                                    else {
+                                        Alert.showToastWith(message: translate(.Verify_code_is_incorrect_please_try_again), vc: self, during: .short)
                                     }
                                 }
                             }
@@ -232,7 +244,7 @@ class MainViewController: BaseViewController {
                             present(alertControllers, animated: true, completion: nil)
                         }
                         else {
-                            Alert.showToastWith(message: "未存在此電話！",
+                            Alert.showToastWith(message: translate(.Phone_number_isnot_exist),
                                                 vc: self,
                                                 during: .long)
                         }
@@ -246,7 +258,7 @@ class MainViewController: BaseViewController {
         alertController.addAction(confirmAction)
         
         // 添加一個取消按鈕
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: translate(.Cancel), style: .cancel, handler: nil)
         alertController.addAction(cancelAction)
         
         // 顯示 UIAlertController

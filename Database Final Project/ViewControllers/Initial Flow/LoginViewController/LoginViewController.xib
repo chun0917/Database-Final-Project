@@ -4,12 +4,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Database_Final_Project" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Database_Final_Project" customModuleProvider="target">
             <connections>
                 <outlet property="emailTextField" destination="1oD-36-D8c" id="Cbn-hJ-vet"/>
                 <outlet property="forgetPasswordButton" destination="mnW-WT-FmZ" id="LUN-Xn-lD9"/>
@@ -91,7 +92,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PT0-h6-Wgx">
-                    <rect key="frame" x="20" y="320" width="374" height="50"/>
+                    <rect key="frame" x="20" y="102" width="374" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="Noq-VD-0Qf"/>
                     </constraints>
@@ -99,6 +100,10 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock.square.stack.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fvz-64-4FK">
+                    <rect key="frame" x="20" y="161" width="374" height="209.5"/>
+                    <color key="tintColor" name="navigationBar"/>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -106,6 +111,9 @@
                 <constraint firstItem="WRI-ZH-cAs" firstAttribute="bottom" secondItem="7r8-wc-uam" secondAttribute="top" id="0qt-1P-2DV"/>
                 <constraint firstItem="7r8-wc-uam" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0uD-Q9-soV"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zzf-EM-0yI" secondAttribute="trailing" constant="20" id="26i-c2-zQM"/>
+                <constraint firstItem="fvz-64-4FK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="4cR-d2-P9w"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fvz-64-4FK" secondAttribute="trailing" constant="20" id="6RN-5j-GUw"/>
+                <constraint firstItem="PT0-h6-Wgx" firstAttribute="top" secondItem="7r8-wc-uam" secondAttribute="bottom" constant="10" id="9Ak-rJ-kcR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="viE-8v-USJ" secondAttribute="trailing" constant="20" id="ASI-WX-mUT"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4Bm-k7-dMt" secondAttribute="trailing" constant="20" id="B6u-am-tR4"/>
                 <constraint firstItem="4Bm-k7-dMt" firstAttribute="top" secondItem="mnW-WT-FmZ" secondAttribute="bottom" constant="5" id="Do2-xs-BHo"/>
@@ -117,12 +125,13 @@
                 <constraint firstItem="4Bm-k7-dMt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="YyS-d5-i2a"/>
                 <constraint firstItem="viE-8v-USJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="aa4-cH-Y1z"/>
                 <constraint firstItem="7r8-wc-uam" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="aii-0n-hcb"/>
+                <constraint firstItem="fvz-64-4FK" firstAttribute="top" secondItem="PT0-h6-Wgx" secondAttribute="bottom" constant="10" id="b2h-ex-etY"/>
                 <constraint firstItem="WRI-ZH-cAs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="c46-WU-2zC"/>
-                <constraint firstItem="1oD-36-D8c" firstAttribute="top" secondItem="PT0-h6-Wgx" secondAttribute="bottom" constant="10" id="cc0-rd-rxf"/>
                 <constraint firstItem="PT0-h6-Wgx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ehK-Wf-Qe0"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7r8-wc-uam" secondAttribute="trailing" id="kAs-K6-QMm"/>
                 <constraint firstItem="1oD-36-D8c" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-50" id="l5g-If-Q8B"/>
                 <constraint firstItem="viE-8v-USJ" firstAttribute="top" secondItem="1oD-36-D8c" secondAttribute="bottom" constant="5" id="lBa-IQ-yUd"/>
+                <constraint firstItem="1oD-36-D8c" firstAttribute="top" secondItem="fvz-64-4FK" secondAttribute="bottom" constant="10" id="lm9-4v-CUq"/>
                 <constraint firstItem="zzf-EM-0yI" firstAttribute="top" secondItem="4Bm-k7-dMt" secondAttribute="bottom" constant="5" id="mvc-dr-kdn"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mnW-WT-FmZ" secondAttribute="trailing" constant="20" id="nNc-cw-wda"/>
                 <constraint firstItem="zzf-EM-0yI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="v9b-D8-4nz"/>
@@ -132,6 +141,10 @@
         </view>
     </objects>
     <resources>
+        <image name="lock.square.stack.fill" catalog="system" width="112" height="128"/>
+        <namedColor name="navigationBar">
+            <color red="0.3449999988079071" green="0.33700001239776611" blue="0.83899998664855957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

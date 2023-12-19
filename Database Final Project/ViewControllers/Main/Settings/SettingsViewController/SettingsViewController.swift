@@ -1,12 +1,12 @@
 //
-//  SettingsMainViewController.swift
+//  SettingsViewController.swift
 //  Database Final Project
 //  Created by 呂淳昇 on 2022/7/1.
 //
 
 import UIKit
 
-class SettingsMainViewController: BaseViewController {
+class SettingsViewController: BaseViewController {
     
     // MARK: - IBOutlet
     
@@ -114,7 +114,7 @@ class SettingsMainViewController: BaseViewController {
 
 // MARK: - NavigationBarViewDelegate
 
-extension SettingsMainViewController: NavigationBarViewDelegate {
+extension SettingsViewController: NavigationBarViewDelegate {
     
     func btnBackClicked() {
         //
@@ -127,7 +127,7 @@ extension SettingsMainViewController: NavigationBarViewDelegate {
 
 // MARK: - UITableViewDelegate, UITableViewDataSource
 
-extension SettingsMainViewController: UITableViewDelegate, UITableViewDataSource {
+extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
     
     // UITableViewDataSource
     
@@ -163,18 +163,18 @@ extension SettingsMainViewController: UITableViewDelegate, UITableViewDataSource
             DispatchQueue.main.async {
                 self.navigationController?.pushViewController(nextVC, animated: true)
             }
-        case .resetPassword:
+        case .changePassword:
             print("重設密碼")
-            let nextVC = ResetPasswordViewController()
+            let nextVC = ChangePasswordViewController()
             DispatchQueue.main.async {
                 self.navigationController?.pushViewController(nextVC, animated: true)
             }
         case .signOut:
             print("登出")
             if (UserPreferences.shared.isSignIn == true) {
-                Alert.showToastWith(message: "登出成功", vc: self, during: .short, dismiss:  {
+                Alert.showToastWith(message: translate(.Sign_Out_Success), vc: self, during: .short, dismiss:  {
                     UserPreferences.shared.isSignIn = false
-                    let nextVC = MainViewController()
+                    let nextVC = LoginViewController()
                     self.pushViewController(nextVC, animated: true)
                 })
             }
