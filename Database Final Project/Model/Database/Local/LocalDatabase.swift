@@ -88,9 +88,9 @@ class LocalDatabase: NSObject {
             case .user:
                 return "CREATE TABLE USER(userID VARCHAR(50), email VARCHAR(50), phone VARCHAR(10), password VARCHAR(50), PRIMARY KEY(userID, email, phone))"
             case .password:
-                return "CREATE TABLE PASSWORD(id VARCHAR(50) PRIMARY KEY,userID VARCHAR(50), cipherText VARCHAR(1000))"
+                return "CREATE TABLE PASSWORD(id VARCHAR(50) PRIMARY KEY,userID VARCHAR(50), cipherText VARCHAR(1000), FOREIGN KEY (userID) REFERENCES USER(userID))"
             case .note:
-                return "CREATE TABLE NOTE(id VARCHAR(50) PRIMARY KEY,userID VARCHAR(50), cipherText VARCHAR(1000))"
+                return "CREATE TABLE NOTE(id VARCHAR(50) PRIMARY KEY,userID VARCHAR(50), cipherText VARCHAR(1000), FOREIGN KEY (userID) REFERENCES USER(userID))"
             }
         }
         

@@ -34,15 +34,8 @@ class AddPasswordViewController: BaseViewController {
     
     var receivePassword: String = "" // 從安全密碼產生器傳過來的密碼
     
-    weak var delegate: AddPasswordViewControllerDelegate?
     weak var showFirstAddAlertDelegate: ShowFirstAddAlertDelegate?
     
-    var root: Root = .password
-    
-    enum Root {
-        case password // 走一般流程呼叫的
-        case chromeExtension // 走 Chrome Extension 流程呼叫的
-    }
     
     // MARK: - LifeCycle
     
@@ -62,9 +55,6 @@ class AddPasswordViewController: BaseViewController {
         // 設定 NavigationBar 樣式
         setupNavigationBarView()
         
-        if root == .chromeExtension {
-            self.navigationController?.presentationController?.delegate = self
-        }
         
         // 設定 TextField 樣式
         setupTextFields()
@@ -98,9 +88,9 @@ class AddPasswordViewController: BaseViewController {
     /// 設定 NavigationBarView 樣式
     private func setupNavigationBarView() {
         vNavigationBar.delegate = self
-        vNavigationBar.setInit(backButtonIsHidden: (root == .chromeExtension) ? true : false,
-                               backButtonImage: (root == .chromeExtension) ? nil : UIImage(icon: .back),
-                               backButtonTitle: (root == .chromeExtension) ? translate(.Cancel) : translate(.Add),
+        vNavigationBar.setInit(backButtonIsHidden: false,
+                               backButtonImage: UIImage(icon: .back),
+                               backButtonTitle: translate(.Add),
                                displayMode: .leftRight,
                                btnIcon2: .save)
     }
@@ -148,7 +138,7 @@ class AddPasswordViewController: BaseViewController {
         noteTextView.placeholder = translate(.Note)
         noteTextView.delegate = self
     }
-        
+    
     // MARK: - NavigationBarButtonItems Actions
     
     @objc func backButtonAction() {
@@ -158,11 +148,7 @@ class AddPasswordViewController: BaseViewController {
             urlTextField.text == "" &&
             noteTextView.text == "") {
             print("輸入框為空值")
-            if root == .chromeExtension {
-                self.dismiss(animated: true)
-            } else {
-                popToRootViewController()
-            }
+            popToRootViewController()
         } else {
             print("輸入框有值")
             Alert.showAlertWith(title: translate(.Cancel_Add),
@@ -171,11 +157,7 @@ class AddPasswordViewController: BaseViewController {
                                 confirmTitle: translate(.Confirm),
                                 cancelTitle: translate(.Cancel)) {
                 print("pop to top vc")
-                if self.root == .chromeExtension {
-                    self.dismiss(animated: true)
-                } else {
-                    self.popViewController()
-                }
+                self.popViewController()
             } cancel: {
                 print("will edit")
             }
@@ -232,15 +214,10 @@ class AddPasswordViewController: BaseViewController {
                 
                 LocalDatabase.shared.insert(id: pm.id,userID: UserPreferences.shared.userID, cipherText: combined, table: .password)
             } dismiss: {
-                if self.root == .chromeExtension {
-                    self.delegate?.chromeExtensionAutoFillTableViewReloadData()
-                    self.dismiss(animated: true)
-                } else {
-                    if UserPreferences.shared.isFirstAddPasswordOrNotes == false {
-                        self.showFirstAddAlertDelegate?.showAlert()
-                    }
-                    self.popToRootViewController()
+                if UserPreferences.shared.isFirstAddPasswordOrNotes == false {
+                    self.showFirstAddAlertDelegate?.showAlert()
                 }
+                self.popToRootViewController()
             }
         }
     }
@@ -406,13 +383,6 @@ extension AddPasswordViewController: UITextViewDelegate {
             self.notesCountLabel.text = "\(textView.text.count)/100"
         }
     }
-}
-
-// MARK: - Protocol
-
-protocol AddPasswordViewControllerDelegate: NSObjectProtocol {
-    
-    func chromeExtensionAutoFillTableViewReloadData()
 }
 
 /*

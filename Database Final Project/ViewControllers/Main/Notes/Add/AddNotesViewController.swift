@@ -151,7 +151,6 @@ class AddNotesViewController: BaseViewController {
                     
                 } dismiss: {
                     if UserPreferences.shared.isFirstAddPasswordOrNotes == false {
-//                        NotificationCenter.default.post(name: .showFirstAddAlert, object: nil)
                         self.showFirstAddAlertDelegate?.showAlert()
                     }
                     self.popToRootViewController()

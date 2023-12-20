@@ -151,12 +151,17 @@ class ChangePasswordViewController: BaseViewController {
             print("必填欄位皆已填寫，但網址、備註可為空值")
             // 按下儲存按鈕後要做的事 ...
             let result = changePassword(id: UserPreferences.shared.userID, originPassword: originPasswordTextField.text!, newPassword: newPasswordTextField.text!)
-            if (result == true) {
+            if ((result == true) && (newPasswordTextField.text == confirmNewPasswordTextField.text)) {
                 Alert.showToastWith(message: translate(.Change_Password_Succeed),
                                     vc: self,
                                     during: .long, dismiss:  {
                     self.popToRootViewController()
                 })
+            }
+            else {
+                Alert.showToastWith(message: translate(.Password_do_not_match),
+                                    vc: self,
+                                    during: .short)
             }
         }
     }

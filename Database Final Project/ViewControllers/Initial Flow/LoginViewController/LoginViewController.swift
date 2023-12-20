@@ -209,12 +209,12 @@ class LoginViewController: BaseViewController {
         // 添加一個確認按鈕
         let confirmAction = UIAlertAction(title: translate(.Confirm), style: .default) { [unowned self] _ in
             // 獲取使用者輸入的文字
-            if let text = alertController.textFields?.first?.text {
-                print("Entered text: \(text)")
+            if let phoneNumber = alertController.textFields?.first?.text {
+                print("Entered phoneNumber: \(phoneNumber)")
                 if self.connectDB() {
                     let query = "SELECT * FROM USER WHERE phone = ?"
                     do{
-                        let results: FMResultSet = try database.executeQuery(query, values: [text])
+                        let results: FMResultSet = try database.executeQuery(query, values: [phoneNumber])
                         if (results.next()) {
                             let verifyCode = Int.random(in: 100000 ..< 1000000)
                             UserNotifications.shared.add(identifier: .icloud, subTitle: translate(.Verify_code), body: translate(.Verify_code) + ":\(verifyCode)")
@@ -223,12 +223,12 @@ class LoginViewController: BaseViewController {
                                 textField.placeholder = translate(.Verify_code)
                             }
                             // 添加一個確認按鈕
-                            let confirmActions = UIAlertAction(title: translate(.Confirm), style: .default){ _ in
-                                if let texts = alertControllers.textFields?.first?.text {
-                                    if (texts == "\(verifyCode)") {
-                                        let querys = "UPDATE USER SET password = ? WHERE phone = ?"
+                            let confirmActions = UIAlertAction(title: translate(.Confirm), style: .default){ [self] _ in
+                                if let inputVerifyCode = alertControllers.textFields?.first?.text {
+                                    if (inputVerifyCode == "\(verifyCode)") {
+                                        let resetQuery = "UPDATE USER SET password = ? WHERE phone = ?"
                                         do {
-                                            try database.executeUpdate(querys, values: ["000000",text])
+                                            try database.executeUpdate(resetQuery, values: ["000000",phoneNumber])
                                             Alert.showToastWith(message: translate(.Reset_your_password_to_000000), vc: self, during: .short)
                                         } catch {
                                             print(error.localizedDescription)
